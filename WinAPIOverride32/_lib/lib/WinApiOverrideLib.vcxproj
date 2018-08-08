@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugUnicode|Win32">
+      <Configuration>DebugUnicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseUnicode|Win32">
+      <Configuration>ReleaseUnicode</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D1975F4-F3D7-4C5E-A3C7-6DF57A1B27F4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)WinApiOverrideLib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)WinApiOverrideLib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugUnicode|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)WinApiOverrideLib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseUnicode|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)WinApiOverrideLib.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Tools\APIError\APIError.cpp" />
+    <ClCompile Include="..\..\..\Tools\CleanCloseHandle\CleanCloseHandle.cpp" />
+    <ClCompile Include="..\..\..\Tools\Clipboard\Clipboard.cpp" />
+    <ClCompile Include="..\..\..\Tools\Dll\DllFinder.cpp" />
+    <ClCompile Include="..\..\..\Tools\Dll\DllSideBySideAssembyFinder.cpp" />
+    <ClCompile Include="..\..\..\Tools\Dll\PeManifestAssembly.cpp" />
+    <ClCompile Include="..\..\..\Tools\File\StdFileOperations.cpp" />
+    <ClCompile Include="..\..\..\Tools\File\TextFile.cpp" />
+    <ClCompile Include="..\..\..\Tools\Gui\ListView\Listview.cpp" />
+    <ClCompile Include="..\..\..\Tools\Gui\Menu\PopUpMenu.cpp" />
+    <ClCompile Include="..\..\..\Tools\LinkList\LinkList.cpp" />
+    <ClCompile Include="..\..\..\Tools\LinkList\LinkListBase.cpp" />
+    <ClCompile Include="..\..\..\Tools\LinkList\LinkListSimple.cpp" />
+    <ClCompile Include="..\..\..\Tools\LinkList\SingleThreaded\LinkListBaseSingleThreaded.cpp" />
+    <ClCompile Include="..\..\..\Tools\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.cpp" />
+    <ClCompile Include="..\..\..\Tools\LinkList\SingleThreaded\LinkListSingleThreaded.cpp" />
+    <ClCompile Include="..\..\..\Tools\Pe\PE.cpp" />
+    <ClCompile Include="..\..\..\Tools\Privilege\Privilege.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\APIOverride\ApiOverride.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\APIOverride\ApiOverrideFuncAndParams.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\APIOverride\ExpressionParser.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\APIOverride\SupportedParameters.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\APIOverride\UserDataType.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\APIOverride\UserDataTypeVar.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\APIOverride\UserDefine.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\MailSlot\MailSlotClient.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\MailSlot\MailSlotServer.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\Memory\ProcessMemory.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\ProcessHelper\ProcessHelper.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\ProcessName\ProcessName.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\SetEnvVarProc\SetEnvironmentVariableToProcess.cpp" />
+    <ClCompile Include="..\..\..\Tools\Process\SuspendedProcess\SuspendedProcess.cpp" />
+    <ClCompile Include="..\..\..\Tools\String\AnsiUnicodeConvert.cpp" />
+    <ClCompile Include="..\..\..\Tools\String\SecureTcscat.cpp" />
+    <ClCompile Include="..\..\..\Tools\String\StringConverter.cpp" />
+    <ClCompile Include="..\..\..\Tools\String\TrimString.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Tools\APIError\APIError.h" />
+    <ClInclude Include="..\..\..\Tools\CleanCloseHandle\CleanCloseHandle.h" />
+    <ClInclude Include="..\..\..\Tools\Clipboard\Clipboard.h" />
+    <ClInclude Include="..\..\..\Tools\Dll\DllFinder.h" />
+    <ClInclude Include="..\..\..\Tools\Dll\DllSideBySideAssembyFinder.h" />
+    <ClInclude Include="..\..\..\Tools\Dll\PeManifestAssembly.h" />
+    <ClInclude Include="..\..\..\Tools\File\StdFileOperations.h" />
+    <ClInclude Include="..\..\..\Tools\File\TextFile.h" />
+    <ClInclude Include="..\..\..\Tools\Gui\ListView\Listview.h" />
+    <ClInclude Include="..\..\..\Tools\Gui\Menu\PopUpMenu.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\LinkList.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\LinkListBase.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\LinkListItem.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\LinkListItemTemplate.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\LinkListSimple.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\SingleThreaded\LinkListBaseSingleThreaded.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.h" />
+    <ClInclude Include="..\..\..\Tools\LinkList\SingleThreaded\LinkListSingleThreaded.h" />
+    <ClInclude Include="..\..\..\Tools\Pe\PE.h" />
+    <ClInclude Include="..\..\..\Tools\Privilege\Privilege.h" />
+    <ClInclude Include="..\..\..\Tools\Process\APIOverride\ApiOverride.h" />
+    <ClInclude Include="..\..\..\Tools\Process\APIOverride\ApiOverrideFuncAndParams.h" />
+    <ClInclude Include="..\..\..\Tools\Process\APIOverride\ExpressionParser.h" />
+    <ClInclude Include="..\..\..\Tools\Process\APIOverride\SupportedParameters.h" />
+    <ClInclude Include="..\..\..\Tools\Process\APIOverride\UserDataType.h" />
+    <ClInclude Include="..\..\..\Tools\Process\APIOverride\UserDataTypeVar.h" />
+    <ClInclude Include="..\..\..\Tools\Process\APIOverride\UserDefine.h" />
+    <ClInclude Include="..\..\..\Tools\Process\MailSlot\MailSlotClient.h" />
+    <ClInclude Include="..\..\..\Tools\Process\MailSlot\MailSlotServer.h" />
+    <ClInclude Include="..\..\..\Tools\Process\Memory\ProcessMemory.h" />
+    <ClInclude Include="..\..\..\Tools\Process\ProcessHelper\ProcessHelper.h" />
+    <ClInclude Include="..\..\..\Tools\Process\ProcessName\ProcessName.h" />
+    <ClInclude Include="..\..\..\Tools\Process\SetEnvVarProc\SetEnvironmentVariableToProcess.h" />
+    <ClInclude Include="..\..\..\Tools\Process\SuspendedProcess\SuspendedProcess.h" />
+    <ClInclude Include="..\..\..\Tools\String\AnsiUnicodeConvert.h" />
+    <ClInclude Include="..\..\..\Tools\String\CodeParserHelper.h" />
+    <ClInclude Include="..\..\..\Tools\String\SecureTcscat.h" />
+    <ClInclude Include="..\..\..\Tools\String\StringConverter.h" />
+    <ClInclude Include="..\..\..\Tools\String\TrimString.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

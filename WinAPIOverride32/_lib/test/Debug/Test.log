@@ -1,0 +1,3 @@
+﻿example.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+  Test.vcxproj -> C:\Users\VietHQ\Desktop\winapioverride32_src (1)\WinAPIOverride32\_lib\test\Debug\Test.exe
+  Test.vcxproj -> Debug\Test.pdb (Full PDB)

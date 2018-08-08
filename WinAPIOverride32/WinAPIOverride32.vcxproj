@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WinApiOverride32Debug|Win32">
+      <Configuration>WinApiOverride32Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WinApiOverride32Release|Win32">
+      <Configuration>WinApiOverride32Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WinApiOverride32UnicodeDebug|Win32">
+      <Configuration>WinApiOverride32UnicodeDebug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="WinApiOverride32UnicodeRelease|Win32">
+      <Configuration>WinApiOverride32UnicodeRelease</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{192F8A96-1A14-41BF-BF52-7637C7FA439A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeRelease|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeDebug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeRelease|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeDebug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>output/Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>output/release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Debug|Win32'">
+    <OutDir>$(Configuration)\output\debug\</OutDir>
+    <IntDir>$(Configuration)\output\debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeDebug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeRelease|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)WinAPIOverride32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)WinAPIOverride32.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)WinAPIOverride32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)/output/debug/WinAPIOverride32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)WinAPIOverride32.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)/WinAPIOverride32Release/WinAPIOverride32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeDebug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;UNICODE;_UNICODE;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)/output/debugUnicode/WinAPIOverride32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)WinAPIOverride32.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32UnicodeRelease|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;UNICODE;_UNICODE;_WINSOCKAPI_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)output\releaseUnicode\WinAPIOverride32.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <HeapReserveSize>0</HeapReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Tools\APIError\APIError.cpp" />
+    <ClCompile Include="..\Tools\CleanCloseHandle\CleanCloseHandle.cpp" />
+    <ClCompile Include="..\Tools\Clipboard\Clipboard.cpp" />
+    <ClCompile Include="..\Tools\Com\GUIDStringConvert.cpp" />
+    <ClCompile Include="..\Tools\Com\RegisterComComponent.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\DebugInfos.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\FunctionBlockInfos.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\FunctionInfos.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\LabelInfos.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\ModuleInfos.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\regs.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\SymbolLocation.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\ThunkInfos.cpp" />
+    <ClCompile Include="..\Tools\DebugInfos\DebugInfosClasses\TypeInfos.cpp" />
+    <ClCompile Include="..\Tools\Dll\DllFinder.cpp" />
+    <ClCompile Include="..\Tools\Dll\DllSideBySideAssembyFinder.cpp" />
+    <ClCompile Include="..\Tools\Dll\PeManifestAssembly.cpp" />
+    <ClCompile Include="..\Tools\Driver\Driver.cpp" />
+    <ClCompile Include="..\Tools\File\FileSearch.cpp" />
+    <ClCompile Include="..\Tools\File\StdFileOperations.cpp" />
+    <ClCompile Include="..\Tools\File\TextFile.cpp" />
+    <ClCompile Include="..\Tools\Gui\Dialog\DialogHelper.cpp" />
+    <ClCompile Include="..\Tools\Gui\Dialog\DialogSimple.cpp" />
+    <ClCompile Include="..\Tools\Gui\ListBox\Listbox.cpp" />
+    <ClCompile Include="..\Tools\Gui\ListView\Listview.cpp" />
+    <ClCompile Include="..\Tools\Gui\Menu\PopUpMenu.cpp" />
+    <ClCompile Include="..\Tools\Gui\Rebar\Rebar.cpp" />
+    <ClCompile Include="..\Tools\Gui\SelectWindow\SelectWindow.cpp" />
+    <ClCompile Include="..\Tools\Gui\Splitter\Splitter.cpp" />
+    <ClCompile Include="..\Tools\Gui\SysLink\SysLink.cpp" />
+    <ClCompile Include="..\Tools\Gui\Tab\TabControl.cpp" />
+    <ClCompile Include="..\Tools\Gui\ToolBar\Toolbar.cpp" />
+    <ClCompile Include="..\Tools\Gui\ToolTip\ToolTip.cpp" />
+    <ClCompile Include="..\Tools\LinkList\LinkList.cpp" />
+    <ClCompile Include="..\Tools\LinkList\LinkListBase.cpp" />
+    <ClCompile Include="..\Tools\LinkList\LinkListSimple.cpp" />
+    <ClCompile Include="..\Tools\LinkList\SingleThreaded\LinkListBaseSingleThreaded.cpp" />
+    <ClCompile Include="..\Tools\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.cpp" />
+    <ClCompile Include="..\Tools\LinkList\SingleThreaded\LinkListSingleThreaded.cpp" />
+    <ClCompile Include="..\Tools\Network\HTTP.cpp" />
+    <ClCompile Include="..\Tools\Pe\PE.cpp" />
+    <ClCompile Include="..\Tools\Privilege\Privilege.cpp" />
+    <ClCompile Include="..\Tools\Process\APIOverride\ApiOverride.cpp" />
+    <ClCompile Include="..\Tools\Process\APIOverride\ApiOverrideFuncAndParams.cpp" />
+    <ClCompile Include="..\Tools\Process\APIOverride\ExpressionParser.cpp" />
+    <ClCompile Include="..\Tools\Process\APIOverride\SupportedParameters.cpp" />
+    <ClCompile Include="..\Tools\Process\APIOverride\UserDataType.cpp" />
+    <ClCompile Include="..\Tools\Process\APIOverride\UserDataTypeVar.cpp" />
+    <ClCompile Include="..\Tools\Process\APIOverride\UserDefine.cpp" />
+    <ClCompile Include="..\Tools\Process\MailSlot\MailSlotClient.cpp" />
+    <ClCompile Include="..\Tools\Process\MailSlot\MailSlotServer.cpp" />
+    <ClCompile Include="..\Tools\Process\Memory\ProcessMemory.cpp" />
+    <ClCompile Include="..\Tools\Process\ProcessHelper\ProcessHelper.cpp" />
+    <ClCompile Include="..\Tools\Process\ProcessMonitor\ProcMonInterface.cpp" />
+    <ClCompile Include="..\Tools\Process\ProcessName\ProcessName.cpp" />
+    <ClCompile Include="..\Tools\Process\SetEnvVarProc\SetEnvironmentVariableToProcess.cpp" />
+    <ClCompile Include="..\Tools\Process\SuspendedProcess\SuspendedProcess.cpp" />
+    <ClCompile Include="..\Tools\SoftwareUpdate\SoftwareUpdate.cpp" />
+    <ClCompile Include="..\Tools\String\AnsiUnicodeConvert.cpp" />
+    <ClCompile Include="..\Tools\String\MultipleElementsParsing.cpp" />
+    <ClCompile Include="..\Tools\String\SecureTcscat.cpp" />
+    <ClCompile Include="..\Tools\String\StringConverter.cpp" />
+    <ClCompile Include="..\Tools\String\StrToHex.cpp" />
+    <ClCompile Include="..\Tools\String\TrimString.cpp" />
+    <ClCompile Include="..\Tools\String\WildCharCompare.cpp" />
+    <ClCompile Include="..\Tools\Version\Version.cpp" />
+    <ClCompile Include="..\Tools\Zip\XUnzip.cpp" />
+    <ClCompile Include="..\Tools\Zip\XZip.cpp" />
+    <ClCompile Include="about.cpp" />
+    <ClCompile Include="ComClsidNameConvert.cpp" />
+    <ClCompile Include="ComComponents.cpp" />
+    <ClCompile Include="ComIidNameConvert.cpp" />
+    <ClCompile Include="CommandLineParsing.cpp" />
+    <ClCompile Include="CompareLogs.cpp" />
+    <ClCompile Include="filters.cpp" />
+    <ClCompile Include="HexDisplay.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MemoryUserInterface.cpp" />
+    <ClCompile Include="Modulesfilters.cpp" />
+    <ClCompile Include="MonitoringWizard.cpp" />
+    <ClCompile Include="OpenSave.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="OptionsUserInterface.cpp" />
+    <ClCompile Include="ParseParametersForRemoteCall.cpp" />
+    <ClCompile Include="PluginManager.cpp" />
+    <ClCompile Include="RemoteCall.cpp" />
+    <ClCompile Include="RemoteCallResult.cpp" />
+    <ClCompile Include="ResizeMainDialog.cpp" />
+    <ClCompile Include="Search.cpp" />
+    <ClCompile Include="SelectColumns.cpp" />
+    <ClCompile Include="SelectHookedProcess.cpp" />
+    <ClCompile Include="Stats.cpp" />
+    <ClCompile Include="StringBytesConvert.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Tools\APIError\APIError.h" />
+    <ClInclude Include="..\Tools\CleanCloseHandle\CleanCloseHandle.h" />
+    <ClInclude Include="..\Tools\Clipboard\Clipboard.h" />
+    <ClInclude Include="..\Tools\Com\GUIDStringConvert.h" />
+    <ClInclude Include="..\Tools\Com\RegisterComComponent.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\callback.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\DebugInfos.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\FunctionBlockInfos.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\FunctionInfos.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\LabelInfos.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\ModuleInfos.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\regs.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\SymbolLocation.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\ThunkInfos.h" />
+    <ClInclude Include="..\Tools\DebugInfos\DebugInfosClasses\TypeInfos.h" />
+    <ClInclude Include="..\Tools\Dll\DllFinder.h" />
+    <ClInclude Include="..\Tools\Dll\DllSideBySideAssembyFinder.h" />
+    <ClInclude Include="..\Tools\Dll\PeManifestAssembly.h" />
+    <ClInclude Include="..\Tools\Driver\Driver.h" />
+    <ClInclude Include="..\Tools\File\FileSearch.h" />
+    <ClInclude Include="..\Tools\File\StdFileOperations.h" />
+    <ClInclude Include="..\Tools\File\TextFile.h" />
+    <ClInclude Include="..\Tools\Gui\Dialog\DialogHelper.h" />
+    <ClInclude Include="..\Tools\Gui\Dialog\DialogSimple.h" />
+    <ClInclude Include="..\Tools\Gui\ListBox\Listbox.h" />
+    <ClInclude Include="..\Tools\Gui\ListView\Listview.h" />
+    <ClInclude Include="..\Tools\Gui\Menu\PopUpMenu.h" />
+    <ClInclude Include="..\Tools\Gui\Rebar\Rebar.h" />
+    <ClInclude Include="..\Tools\Gui\SelectWindow\SelectWindow.h" />
+    <ClInclude Include="..\Tools\Gui\Splitter\Splitter.h" />
+    <ClInclude Include="..\Tools\Gui\SysLink\SysLink.h" />
+    <ClInclude Include="..\Tools\Gui\Tab\TabControl.h" />
+    <ClInclude Include="..\Tools\Gui\ToolBar\Toolbar.h" />
+    <ClInclude Include="..\Tools\Gui\ToolTip\ToolTip.h" />
+    <ClInclude Include="..\Tools\LinkList\LinkList.h" />
+    <ClInclude Include="..\Tools\LinkList\LinkListBase.h" />
+    <ClInclude Include="..\Tools\LinkList\LinkListSimple.h" />
+    <ClInclude Include="..\Tools\LinkList\SingleThreaded\LinkListBaseSingleThreaded.h" />
+    <ClInclude Include="..\Tools\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.h" />
+    <ClInclude Include="..\Tools\LinkList\SingleThreaded\LinkListSingleThreaded.h" />
+    <ClInclude Include="..\Tools\Network\HTTP.h" />
+    <ClInclude Include="..\Tools\Pe\PE.h" />
+    <ClInclude Include="..\Tools\Privilege\Privilege.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\ApiOverride.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\ApiOverrideFuncAndParams.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\ExpressionParser.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\InterProcessCommunication.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\SupportedParameters.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\UserDataType.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\UserDataTypeVar.h" />
+    <ClInclude Include="..\Tools\Process\APIOverride\UserDefine.h" />
+    <ClInclude Include="..\Tools\Process\MailSlot\MailSlotClient.h" />
+    <ClInclude Include="..\Tools\Process\MailSlot\MailSlotServer.h" />
+    <ClInclude Include="..\Tools\Process\Memory\ProcessMemory.h" />
+    <ClInclude Include="..\Tools\Process\ProcessHelper\ProcessHelper.h" />
+    <ClInclude Include="..\Tools\Process\ProcessMonitor\ProcMonExport.h" />
+    <ClInclude Include="..\Tools\Process\ProcessMonitor\ProcMonInterface.h" />
+    <ClInclude Include="..\Tools\Process\ProcessName\ProcessName.h" />
+    <ClInclude Include="..\Tools\Process\SetEnvVarProc\SetEnvironmentVariableToProcess.h" />
+    <ClInclude Include="..\Tools\Process\SuspendedProcess\SuspendedProcess.h" />
+    <ClInclude Include="..\Tools\ShellChangeNotifications\IShellChangeNotifications.h" />
+    <ClInclude Include="..\Tools\SoftwareUpdate\SoftwareUpdate.h" />
+    <ClInclude Include="..\Tools\String\AnsiUnicodeConvert.h" />
+    <ClInclude Include="..\Tools\String\MultipleElementsParsing.h" />
+    <ClInclude Include="..\Tools\String\SecureTcscat.h" />
+    <ClInclude Include="..\Tools\String\StringConverter.h" />
+    <ClInclude Include="..\Tools\String\StrToHex.h" />
+    <ClInclude Include="..\Tools\String\TrimString.h" />
+    <ClInclude Include="..\Tools\String\WildCharCompare.h" />
+    <ClInclude Include="..\Tools\Version\Version.h" />
+    <ClInclude Include="..\Tools\Zip\XUnzip.h" />
+    <ClInclude Include="..\Tools\Zip\XZip.h" />
+    <ClInclude Include="about.h" />
+    <ClInclude Include="ComClsidNameConvert.h" />
+    <ClInclude Include="ComComponents.h" />
+    <ClInclude Include="ComIidNameConvert.h" />
+    <ClInclude Include="CommandLineParsing.h" />
+    <ClInclude Include="CompareLogs.h" />
+    <ClInclude Include="filters.h" />
+    <ClInclude Include="HexDisplay.h" />
+    <ClInclude Include="IWinApiOverride.h" />
+    <ClInclude Include="IWinApiOverrideLogs.h" />
+    <ClInclude Include="IWinApiOverrideMenu.h" />
+    <ClInclude Include="IWinApiOverrideOptions.h" />
+    <ClInclude Include="IWinApiOverridePlugin.h" />
+    <ClInclude Include="MemoryUserInterface.h" />
+    <ClInclude Include="Modulesfilters.h" />
+    <ClInclude Include="MonitoringWizard.h" />
+    <ClInclude Include="OpenSave.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OptionsUserInterface.h" />
+    <ClInclude Include="ParseParametersForRemoteCall.h" />
+    <ClInclude Include="PluginManager.h" />
+    <ClInclude Include="RemoteCall.h" />
+    <ClInclude Include="RemoteCallResult.h" />
+    <ClInclude Include="ResizeMainDialog.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Search.h" />
+    <ClInclude Include="SelectColumns.h" />
+    <ClInclude Include="SelectHookedProcess.h" />
+    <ClInclude Include="Stats.h" />
+    <ClInclude Include="StringBytesConvert.h" />
+    <ClInclude Include="StructsAndDefines.h" />
+    <ClInclude Include="WinApiOverride.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\about.ico" />
+    <Image Include="resource\Analysis.ico" />
+    <Image Include="resource\AnalysisDisabled.ico" />
+    <Image Include="resource\blank.bmp" />
+    <Image Include="resource\bug_report.ico" />
+    <Image Include="resource\check_for_update.ico" />
+    <Image Include="resource\clear.ico" />
+    <Image Include="resource\clearsmall.ico" />
+    <Image Include="resource\clipboardsmall.ico" />
+    <Image Include="resource\CLSIDIIDconvert.ico" />
+    <Image Include="resource\Columns.ico" />
+    <Image Include="resource\com.ico" />
+    <Image Include="resource\Compare.ico" />
+    <Image Include="resource\comtools.ico" />
+    <Image Include="resource\Convert.ico" />
+    <Image Include="resource\copyallsmall.ico" />
+    <Image Include="resource\copysmall.ico" />
+    <Image Include="resource\cross.bmp" />
+    <Image Include="resource\down.ico" />
+    <Image Include="resource\downdown.ico" />
+    <Image Include="resource\downhot.ico" />
+    <Image Include="resource\Dump.ico" />
+    <Image Include="resource\DumpDisabled.ico" />
+    <Image Include="resource\Edit.ico" />
+    <Image Include="resource\ErrorMessage.ico" />
+    <Image Include="resource\errorsmall.ico" />
+    <Image Include="resource\export.ico" />
+    <Image Include="resource\exportallsmall.ico" />
+    <Image Include="resource\Find.ico" />
+    <Image Include="resource\FindNext.ico" />
+    <Image Include="resource\FindPrevious.ico" />
+    <Image Include="resource\googlesmall.ico" />
+    <Image Include="resource\help.ico" />
+    <Image Include="resource\highlight.ico" />
+    <Image Include="resource\left.ico" />
+    <Image Include="resource\leftdown.ico" />
+    <Image Include="resource\lefthot.ico" />
+    <Image Include="resource\memory.ico" />
+    <Image Include="resource\ModulesFilters.ico" />
+    <Image Include="resource\ModulesFiltersDisabled.ico" />
+    <Image Include="resource\MonitoringBuilder.ico" />
+    <Image Include="resource\msdn.ico" />
+    <Image Include="resource\msdnsmall.ico" />
+    <Image Include="resource\net.ico" />
+    <Image Include="resource\NetInteraction.ico" />
+    <Image Include="resource\open.ico" />
+    <Image Include="resource\OpenDisabled.ico" />
+    <Image Include="resource\options.ico" />
+    <Image Include="resource\PauseMonitoring.ico" />
+    <Image Include="resource\PauseMonitoringDisabled.ico" />
+    <Image Include="resource\PauseMonitoringHot.ico" />
+    <Image Include="resource\PauseOverriding.ico" />
+    <Image Include="resource\PauseOverridingDisabled.ico" />
+    <Image Include="resource\PauseOverridingHot.ico" />
+    <Image Include="resource\paypal.ico" />
+    <Image Include="resource\plugins.ico" />
+    <Image Include="resource\ProcessesFilters.ico" />
+    <Image Include="resource\ProcessesFiltersDisabled.ico" />
+    <Image Include="resource\refresh.ico" />
+    <Image Include="resource\remotecall.ico" />
+    <Image Include="resource\remotecalldisabled.ico" />
+    <Image Include="resource\removesmall.ico" />
+    <Image Include="resource\ResumeMonitoring.ico" />
+    <Image Include="resource\ResumeMonitoringHot.ico" />
+    <Image Include="resource\ResumeOverriding.ico" />
+    <Image Include="resource\ResumeOverridingHot.ico" />
+    <Image Include="resource\returnerrorsmall.ico" />
+    <Image Include="resource\right.ico" />
+    <Image Include="resource\rightdown.ico" />
+    <Image Include="resource\righthot.ico" />
+    <Image Include="resource\save.ico" />
+    <Image Include="resource\savesmall.ico" />
+    <Image Include="resource\Search.ico" />
+    <Image Include="resource\Start.ico" />
+    <Image Include="resource\StartHot.ico" />
+    <Image Include="resource\Stat.ico" />
+    <Image Include="resource\Stop.ico" />
+    <Image Include="resource\StopHot.ico" />
+    <Image Include="resource\up.ico" />
+    <Image Include="resource\updown.ico" />
+    <Image Include="resource\uphot.ico" />
+    <Image Include="resource\WinAPIOverride.ico" />
+    <Image Include="resource\Wizard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\cursor.cur" />
+    <None Include="resource\cursor_hot.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="resource\WinAPIOverride32.exe.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

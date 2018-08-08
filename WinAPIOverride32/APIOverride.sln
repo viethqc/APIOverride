@@ -1,0 +1,132 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinAPIOverride32", "WinAPIOverride32.vcxproj", "{192F8A96-1A14-41BF-BF52-7637C7FA439A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "APIOverride_InjectedDLL", "..\Tools\Process\APIOverride\injected_dll\APIOverride_InjectedDLL.vcxproj", "{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "InjLibDLL", "..\Tools\Process\InjLib\Src\DLL\InjLibDLL.vcxproj", "{1333E4CD-D21F-4684-AAE6-979E7D68D20E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HookCom", "..\Tools\Process\APIOverride\HookCom\HookCom.vcxproj", "{8F11D9E5-13C8-422A-903F-FDAB22423A81}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HookNet", "..\Tools\Process\APIOverride\HookNet\HookNet.vcxproj", "{3E10721B-170A-489C-ADAC-06FB3E7800DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IATLoader", "..\Tools\Process\APIOverride\IATLoader\IATLoader.vcxproj", "{64036262-AF5B-4890-83D2-60155CB6ECE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugUnicode|x86 = DebugUnicode|x86
+		Release|x86 = Release|x86
+		ReleaseUnicode|x86 = ReleaseUnicode|x86
+		WinApiOverride32Debug|x86 = WinApiOverride32Debug|x86
+		WinApiOverride32Release|x86 = WinApiOverride32Release|x86
+		WinApiOverride32UnicodeDebug|x86 = WinApiOverride32UnicodeDebug|x86
+		WinApiOverride32UnicodeRelease|x86 = WinApiOverride32UnicodeRelease|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.Debug|x86.ActiveCfg = Debug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.Debug|x86.Build.0 = Debug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.DebugUnicode|x86.ActiveCfg = Debug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.DebugUnicode|x86.Build.0 = Debug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.Release|x86.ActiveCfg = Release|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.Release|x86.Build.0 = Release|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.ReleaseUnicode|x86.ActiveCfg = Release|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.ReleaseUnicode|x86.Build.0 = Release|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32Debug|x86.ActiveCfg = WinApiOverride32Debug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32Debug|x86.Build.0 = WinApiOverride32Debug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32Release|x86.ActiveCfg = WinApiOverride32Release|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32Release|x86.Build.0 = WinApiOverride32Release|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32UnicodeDebug|x86.ActiveCfg = WinApiOverride32UnicodeDebug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32UnicodeDebug|x86.Build.0 = WinApiOverride32UnicodeDebug|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32UnicodeRelease|x86.ActiveCfg = WinApiOverride32UnicodeRelease|Win32
+		{192F8A96-1A14-41BF-BF52-7637C7FA439A}.WinApiOverride32UnicodeRelease|x86.Build.0 = WinApiOverride32UnicodeRelease|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.Debug|x86.ActiveCfg = Debug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.Debug|x86.Build.0 = Debug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.DebugUnicode|x86.ActiveCfg = Debug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.DebugUnicode|x86.Build.0 = Debug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.Release|x86.ActiveCfg = Release|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.Release|x86.Build.0 = Release|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.ReleaseUnicode|x86.ActiveCfg = Release|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.ReleaseUnicode|x86.Build.0 = Release|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32Debug|x86.ActiveCfg = WinApiOverride32Debug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32Debug|x86.Build.0 = WinApiOverride32Debug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32Release|x86.ActiveCfg = WinApiOverride32Release|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32Release|x86.Build.0 = WinApiOverride32Release|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32UnicodeDebug|x86.ActiveCfg = WinApiOverride32UnicodeDebug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32UnicodeDebug|x86.Build.0 = WinApiOverride32UnicodeDebug|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32UnicodeRelease|x86.ActiveCfg = WinApiOverride32UnicodeRelease|Win32
+		{35A57155-DE83-4EB7-A7F0-64FD76CA1DA4}.WinApiOverride32UnicodeRelease|x86.Build.0 = WinApiOverride32UnicodeRelease|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.Debug|x86.ActiveCfg = Debug|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.Debug|x86.Build.0 = Debug|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.DebugUnicode|x86.ActiveCfg = DebugUnicode|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.DebugUnicode|x86.Build.0 = DebugUnicode|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.Release|x86.ActiveCfg = Release|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.Release|x86.Build.0 = Release|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.ReleaseUnicode|x86.ActiveCfg = ReleaseUnicode|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.ReleaseUnicode|x86.Build.0 = ReleaseUnicode|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32Debug|x86.ActiveCfg = WinApiOverride32Debug|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32Debug|x86.Build.0 = WinApiOverride32Debug|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32Release|x86.ActiveCfg = WinApiOverride32Release|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32Release|x86.Build.0 = WinApiOverride32Release|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32UnicodeDebug|x86.ActiveCfg = WinApiOverride32UnicodeDebug|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32UnicodeDebug|x86.Build.0 = WinApiOverride32UnicodeDebug|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32UnicodeRelease|x86.ActiveCfg = WinApiOverride32UnicodeRelease|Win32
+		{1333E4CD-D21F-4684-AAE6-979E7D68D20E}.WinApiOverride32UnicodeRelease|x86.Build.0 = WinApiOverride32UnicodeRelease|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.Debug|x86.Build.0 = Debug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.DebugUnicode|x86.ActiveCfg = Debug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.DebugUnicode|x86.Build.0 = Debug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.Release|x86.ActiveCfg = Release|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.Release|x86.Build.0 = Release|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.ReleaseUnicode|x86.ActiveCfg = Release|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.ReleaseUnicode|x86.Build.0 = Release|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32Debug|x86.ActiveCfg = WinApiOverride32Debug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32Debug|x86.Build.0 = WinApiOverride32Debug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32Release|x86.ActiveCfg = WinApiOverride32Release|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32Release|x86.Build.0 = WinApiOverride32Release|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32UnicodeDebug|x86.ActiveCfg = WinApiOverride32UnicodeDebug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32UnicodeDebug|x86.Build.0 = WinApiOverride32UnicodeDebug|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32UnicodeRelease|x86.ActiveCfg = WinApiOverride32UnicodeRelease|Win32
+		{8F11D9E5-13C8-422A-903F-FDAB22423A81}.WinApiOverride32UnicodeRelease|x86.Build.0 = WinApiOverride32UnicodeRelease|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.Debug|x86.Build.0 = Debug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.DebugUnicode|x86.ActiveCfg = Debug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.DebugUnicode|x86.Build.0 = Debug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.Release|x86.ActiveCfg = Release|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.Release|x86.Build.0 = Release|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.ReleaseUnicode|x86.ActiveCfg = Release|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.ReleaseUnicode|x86.Build.0 = Release|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32Debug|x86.ActiveCfg = WinApiOverride32Debug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32Debug|x86.Build.0 = WinApiOverride32Debug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32Release|x86.ActiveCfg = WinApiOverride32Release|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32Release|x86.Build.0 = WinApiOverride32Release|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32UnicodeDebug|x86.ActiveCfg = WinApiOverride32UnicodeDebug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32UnicodeDebug|x86.Build.0 = WinApiOverride32UnicodeDebug|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32UnicodeRelease|x86.ActiveCfg = WinApiOverride32UnicodeRelease|Win32
+		{3E10721B-170A-489C-ADAC-06FB3E7800DD}.WinApiOverride32UnicodeRelease|x86.Build.0 = WinApiOverride32UnicodeRelease|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Debug|x86.ActiveCfg = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Debug|x86.Build.0 = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.DebugUnicode|x86.ActiveCfg = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.DebugUnicode|x86.Build.0 = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Release|x86.ActiveCfg = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.Release|x86.Build.0 = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.ReleaseUnicode|x86.ActiveCfg = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.ReleaseUnicode|x86.Build.0 = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32Debug|x86.ActiveCfg = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32Debug|x86.Build.0 = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32Release|x86.ActiveCfg = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32Release|x86.Build.0 = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32UnicodeDebug|x86.ActiveCfg = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32UnicodeDebug|x86.Build.0 = Debug|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32UnicodeRelease|x86.ActiveCfg = Release|Win32
+		{64036262-AF5B-4890-83D2-60155CB6ECE8}.WinApiOverride32UnicodeRelease|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

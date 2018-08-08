@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WinApiOverride32Release|Win32'">
+    <LocalDebuggerCommandArguments>NoGUI SavingFileName="a.txt" OnlyBaseModule  StopAndKillAfter=5 AppPath="C:\Program Files (x86)\Notepad++\notepad++.exe" MonitoringFiles="C:\Users\VietHQ\Desktop\winapioverride32_src (1)\monitoring files\kernel32.txt" OverridingDlls="C:\Users\VietHQ\Desktop\winapioverride32_src (1)\WinAPIOverride32\output\debug\FakeMessageBox.dll"</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

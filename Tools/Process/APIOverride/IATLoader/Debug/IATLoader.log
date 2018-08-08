@@ -1,0 +1,25 @@
+﻿  IATLoaderMain.cpp
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\process\apioverride\iatloader\iatloadermain.cpp(51): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\process\apioverride\iatloader\iatloadermain.cpp(52): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(101): note: see declaration of 'wcscat'
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\process\apioverride\iatloader\iatloadermain.cpp(71): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\process\apioverride\iatloader\iatloadermain.cpp(72): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(101): note: see declaration of 'wcscat'
+  MailSlotClient.cpp
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\process\mailslot\mailslotclient.cpp(39): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: see declaration of 'wcsncpy'
+  DynamicMessageBox.cpp
+  StdFileOperations.cpp
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\file\stdfileoperations.cpp(146): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: see declaration of 'wcsncpy'
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\file\stdfileoperations.cpp(172): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+c:\users\viethq\desktop\winapioverride32_src (1)\tools\file\stdfileoperations.cpp(357): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+  Generating Code...
+StdFileOperations.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library Debug\IATLoader.lib and object Debug\IATLoader.exp
+  IATLoader.vcxproj -> C:\Users\VietHQ\Desktop\winapioverride32_src (1)\Tools\Process\APIOverride\IATLoader\Debug\IATLoader.dll
+  IATLoader.vcxproj -> Debug\IATLoader.pdb (Full PDB)

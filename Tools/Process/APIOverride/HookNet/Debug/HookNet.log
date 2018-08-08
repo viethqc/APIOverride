@@ -1,0 +1,2 @@
+﻿Options.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+LINK : fatal error LNK1104: cannot open file '../../../Disasm/distorm64/distorm_debug.lib'
