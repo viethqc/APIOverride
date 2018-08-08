@@ -1,0 +1,7 @@
+﻿  InjLib.cpp
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\Users\VietHQ\Desktop\winapioverride32_src (1)\Tools\Process\InjLib\Src\DLL\Debug\InjLibDLL.dll) does not match the Linker's OutputFile property value (C:\Users\VietHQ\Desktop\winapioverride32_src (1)\Tools\Process\InjLib\Src\DLL\Debug\InjLib.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(InjLibDLL) does not match the Linker's OutputFile property value (InjLib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+InjLib.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+     Creating library Debug\InjLibDLL.lib and object Debug\InjLibDLL.exp
+  InjLibDLL.vcxproj -> C:\Users\VietHQ\Desktop\winapioverride32_src (1)\Tools\Process\InjLib\Src\DLL\Debug\InjLibDLL.dll
+  InjLibDLL.vcxproj -> Debug\InjLibDLL.pdb (Full PDB)

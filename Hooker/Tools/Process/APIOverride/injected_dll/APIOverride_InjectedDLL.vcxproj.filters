@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="Tools Sources">
+      <UniqueIdentifier>{9491f5df-3474-4614-bd22-a38dbd513f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools Headers">
+      <UniqueIdentifier>{37891d10-0e36-4b24-80bd-ce63b4de0037}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ApiInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="APIMonitoringFileLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="APIOverrideKernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BreakUserInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CallStackUserInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="COM_Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogInterfaceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DumpUserInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicLoadedFuncs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FakeApiLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryUserInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleFilters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NET_Manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessInternalCallRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryFakingOwnerShip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QueryMonitoringOwnerShip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistersUserInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportMessage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetUserWindowStation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\String\AnsiUnicodeConvert.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\APIError\APIError.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ApiOverrideFuncAndParams.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Disasm\CallInstructionSizeFromRetAddress\CallInstructionSizeFromRetAddress.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CleanCloseHandle\CleanCloseHandle.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SingleInstance\CSingleInstance.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Dll\DllFinder.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Dll\DllSideBySideAssembyFinder.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Dll\DllStub.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Gui\DynamicMessageBox\DynamicMessageBox.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExpressionParser.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Exception\HardwareException.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\HookAvailabilityCheck\HookAvailabilityCheck.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Disasm\LengthDisasm\LengthDisasm.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Disasm\LengthDisasm\LengthDisasm32.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinkList\LinkList.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinkList\LinkListBase.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinkList\LinkListSimple.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinkList\SingleThreaded\LinkListSingleThreaded.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MailSlot\MailSlotClient.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MailSlot\MailSlotServer.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Version\OsVersion.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Pe\PE.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Dll\PeManifestAssembly.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProcessAndThreadID\ProcessAndThreadID.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ProcessHelper\ProcessHelper.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\String\SecureTcscat.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\File\StdFileOperations.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\String\StringConverter.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\String\StrToHex.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SupportedParameters.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\File\TextFile.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Thread\ThreadContext.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\String\TrimString.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserDataType.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserDataTypeVar.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\UserDefine.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\String\WildCharCompare.cpp">
+      <Filter>Tools Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LinkList\SingleThreaded\LinkListBaseSingleThreaded.cpp">
+      <Filter>Tools Headers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Memory\ProcessMemory.cpp">
+      <Filter>Tools Headers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ApiSubstitutions.asm">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="safeseh.asm">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApiInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APIMonitoringFileLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APIOverrideDllExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="APIOverrideKernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BreakUserInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CallStackUserInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="COM_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogInterfaceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DumpUserInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicLoadedFuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FakeApiLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GenericFakeAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryUserInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleFilters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NET_Manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessInternalCallRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryFakingOwnerShip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryMonitoringOwnerShip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RegistersUserInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SetUserWindowStation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\String\AnsiUnicodeConvert.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\APIError\APIError.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ApiOverrideFuncAndParams.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Disasm\CallInstructionSizeFromRetAddress\CallInstructionSizeFromRetAddress.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CleanCloseHandle\CleanCloseHandle.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SingleInstance\CSingleInstance.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Dll\DllFinder.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Dll\DllSideBySideAssembyFinder.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Dll\DllStub.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Gui\DynamicMessageBox\DynamicMessageBox.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExportedStructs.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExpressionParser.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Exception\HardwareException.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\HookAvailabilityCheck\HookAvailabilityCheck.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\InterProcessCommunication.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Disasm\LengthDisasm\LengthDisasm.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Disasm\LengthDisasm\LengthDisasm32.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\LinkList\LinkList.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\LinkList\LinkListBase.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\LinkList\SingleThreaded\LinkListBaseSingleThreaded.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\LinkList\LinkListItem.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\LinkList\LinkListSimple.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\LinkList\SingleThreaded\LinkListSimpleSingleThreaded.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\LinkList\SingleThreaded\LinkListSingleThreaded.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MailSlot\MailSlotClient.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MailSlot\MailSlotServer.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Version\OsVersion.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Pe\PE.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Dll\PeManifestAssembly.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProcessAndThreadID\ProcessAndThreadID.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProcessAndThreadID\ProcessAndThreadIDStruct.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ProcessHelper\ProcessHelper.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Memory\ProcessMemory.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\String\SecureTcscat.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\File\StdFileOperations.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\String\StringConverter.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\String\StrToHex.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SupportedParameters.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\File\TextFile.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Thread\ThreadContext.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\String\TrimString.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserDataType.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserDataTypeVar.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\UserDefine.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\String\WildCharCompare.h">
+      <Filter>Tools Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="APIOverride_InjectedDLL.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

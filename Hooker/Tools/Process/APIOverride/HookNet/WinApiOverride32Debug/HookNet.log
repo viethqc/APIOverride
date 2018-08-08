@@ -1,0 +1,3 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(C:\Users\VietHQ\Desktop\winapioverride32_src (1)\Tools\Process\APIOverride\HookNet\WinApiOverride32Debug\HookNet.dll) does not match the Linker's OutputFile property value (C:\Users\VietHQ\Desktop\winapioverride32_src (1)\WinAPIOverride32\output\debug\HookNet.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+Options.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+LINK : fatal error LNK1104: cannot open file '../../../Disasm/distorm64/distorm_debug.lib'

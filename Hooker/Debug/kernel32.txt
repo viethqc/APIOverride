@@ -1,0 +1,882 @@
+kernel32.dll|BOOL ActivateActCtx( HACTCTX hActCtx, ULONG_PTR* lpCookie)|Out|FailureIfNullRet
+kernel32.dll|ATOM AddAtomA( LPCSTR  lpString)
+kernel32.dll|ATOM AddAtomW( LPCWSTR lpString)
+kernel32.dll|BOOL AddConsoleAliasA( LPCSTR  Source, LPCSTR  Target, LPCSTR  ExeName)|FailureIfNullRet
+kernel32.dll|BOOL AddConsoleAliasW( LPCWSTR Source, LPCWSTR Target, LPCWSTR ExeName)|FailureIfNullRet
+kernel32.dll|DWORD AddLocalAlternateComputerNameA( LPCSTR  lpDnsFQHostname, ULONG ulFlags)
+kernel32.dll|DWORD AddLocalAlternateComputerNameW( LPCWSTR lpDnsFQHostname, ULONG ulFlags)
+kernel32.dll|void AddRefActCtx( HANDLE hActCtx)
+kernel32.dll|PVOID AddVectoredExceptionHandler( ULONG FirstHandler, PVECTORED_EXCEPTION_HANDLER VectoredHandler)|Out
+kernel32.dll|BOOL AllocConsole()|FailureIfNullRet
+kernel32.dll|BOOL AllocateUserPhysicalPages( HANDLE hProcess, PULONG_PTR NumberOfPages, PULONG_PTR UserPfnArray)|Out|FailureIfNullRet
+kernel32.dll|BOOL AreFileApisANSI()|FailureIfNullRet
+kernel32.dll|BOOL AssignProcessToJobObject( HANDLE hJob, HANDLE hProcess)|FailureIfNullRet
+kernel32.dll|BOOL AttachConsole( DWORD dwProcessId)|FailureIfNullRet
+kernel32.dll|BOOL BackupRead( HANDLE hFile, LPBYTE lpBuffer, DWORD nNumberOfBytesToRead, LPDWORD lpNumberOfBytesRead, BOOL bAbort, BOOL bProcessSecurity, LPVOID* lpContext)|Out|FailureIfNullRet
+kernel32.dll|BOOL BackupSeek( HANDLE hFile, DWORD dwLowBytesToSeek, DWORD dwHighBytesToSeek, LPDWORD lpdwLowByteSeeked, LPDWORD lpdwHighByteSeeked, LPVOID* lpContext)|Out|FailureIfNullRet
+kernel32.dll|BOOL BackupWrite( HANDLE hFile, LPBYTE lpBuffer, DWORD nNumberOfBytesToWrite, LPDWORD lpNumberOfBytesWritten, BOOL bAbort, BOOL bProcessSecurity, LPVOID* lpContext)|Out|FailureIfNullRet
+kernel32.dll|BaseCheckAppcompatCache(UNKNOWN,UNKNOWN,UNKNOWN,UNKNOWN)
+kernel32.dll|BaseCleanupAppcompatCache(UNKNOWN)
+kernel32.dll|BaseDumpAppcompatCache()
+kernel32.dll|BaseFlushAppcompatCache()
+kernel32.dll|BaseInitAppcompatCache()
+kernel32.dll|BaseInitAppcompatCacheSupport()
+kernel32.dll|BaseProcessInitPostImport()
+kernel32.dll|BaseUpdateAppcompatCache(UNKNOWN,UNKNOWN,UNKNOWN)
+kernel32.dll|BOOL Beep(DWORD dwFreq, DWORD dwDuration)|FailureIfNullRet
+kernel32.dll|HANDLE BeginUpdateResourceA( LPCSTR  pFileName, BOOL bDeleteExistingResources)|FailureIfNullRet
+kernel32.dll|HANDLE BeginUpdateResourceW( LPCWSTR pFileName, BOOL bDeleteExistingResources)|FailureIfNullRet
+kernel32.dll|BOOL BindIoCompletionCallback( HANDLE FileHandle, LPOVERLAPPED_COMPLETION_ROUTINE Function, ULONG Flags)|Out|FailureIfNullRet
+kernel32.dll|BuildCommDCBA(LPCSTR lpDef,LPDCB lpDCB);|Out|FailureIfNullRet
+kernel32.dll|BOOL BuildCommDCBAndTimeoutsA( LPCSTR  lpDef, LPDCB lpDCB, LPCOMMTIMEOUTS lpCommTimeouts)|Out|FailureIfNullRet
+kernel32.dll|BOOL BuildCommDCBAndTimeoutsW( LPCWSTR lpDef, LPDCB lpDCB, LPCOMMTIMEOUTS lpCommTimeouts)|Out|FailureIfNullRet
+kernel32.dll|BuildCommDCBW(LPCWSTR lpDef,LPDCB lpDCB);|Out|FailureIfNullRet
+kernel32.dll|BOOL CallNamedPipeA( LPCSTR  lpNamedPipeName, LPVOID lpInBuffer, DWORD nInBufferSize, LPVOID lpOutBuffer, DWORD nOutBufferSize, LPDWORD lpBytesRead, DWORD nTimeOut)|Out|FailureIfNullRet
+kernel32.dll|BOOL CallNamedPipeW( LPCWSTR lpNamedPipeName, LPVOID lpInBuffer, DWORD nInBufferSize, LPVOID lpOutBuffer, DWORD nOutBufferSize, LPDWORD lpBytesRead, DWORD nTimeOut)|Out|FailureIfNullRet
+;kernel32.dll|BOOL CancelDeviceWakeupRequest (HANDLE hDevice)|FailureIfNullRet
+kernel32.dll|BOOL CancelIo( HANDLE hFile)|FailureIfNullRet
+kernel32.dll|CancelTimerQueueTimer(UNKNOWN,UNKNOWN)|FailureIfNullRet
+kernel32.dll|BOOL CancelWaitableTimer( HANDLE hTimer)|FailureIfNullRet
+kernel32.dll|BOOL ChangeTimerQueueTimer( HANDLE TimerQueue, HANDLE Timer, ULONG DueTime, ULONG Period)|Out|FailureIfNullRet
+;not available on all kernel32.dll version
+!kernel32.dll|BOOL CheckNameLegalDOS8Dot3A(LPCSTR lpName,LPSTR lpOemName,DWORD OemNameSize,PBOOL pbNameContainsSpaces,PBOOL pbNameLegal)|Out|FailureIfNullRet
+;not available on all kernel32.dll version
+!kernel32.dll|BOOL CheckNameLegalDOS8Dot3W(LPCWSTR lpName,LPSTR lpOemName,DWORD OemNameSize,PBOOL pbNameContainsSpaces,PBOOL pbNameLegal)|Out|FailureIfNullRet
+;not available on all kernel32.dll version
+!kernel32.dll|BOOL CheckRemoteDebuggerPresent( HANDLE hProcess, PBOOL pbDebuggerPresent)|Out|FailureIfNullRet
+kernel32.dll|BOOL ClearCommBreak( HANDLE hFile)|FailureIfNullRet
+kernel32.dll|BOOL ClearCommError( HANDLE hFile, LPDWORD lpErrors, LPCOMSTAT lpStat)|Out|FailureIfNullRet
+kernel32.dll|CloseConsoleHandle(HANDLE hObject)
+kernel32.dll|BOOL CloseHandle( HANDLE hObject)|FailureIfNullRet
+kernel32.dll|CloseProfileUserMapping()
+kernel32.dll|CmdBatNotification(UNKNOWN)
+kernel32.dll|BOOL CommConfigDialogA( LPCSTR  lpszName, HWND hWnd, LPCOMMCONFIG lpCC)|FailureIfNullRet
+kernel32.dll|BOOL CommConfigDialogW( LPCWSTR lpszName, HWND hWnd, LPCOMMCONFIG lpCC)|FailureIfNullRet
+kernel32.dll|LONG CompareFileTime( const FILETIME* lpFileTime1, const FILETIME* lpFileTime2)|Out
+kernel32.dll|int CompareStringA( LCID Locale, DWORD dwCmpFlags, LPCSTR  lpString1, int cchCount1, LPCSTR  lpString2, int cchCount2)
+kernel32.dll|int CompareStringW( LCID Locale, DWORD dwCmpFlags, LPCWSTR lpString1, int cchCount1, LPCWSTR lpString2, int cchCount2)
+kernel32.dll|BOOL ConnectNamedPipe( HANDLE hNamedPipe, LPOVERLAPPED lpOverlapped)|Out|FailureIfNullRet
+kernel32.dll|BOOL ContinueDebugEvent( DWORD dwProcessId, DWORD dwThreadId, DWORD dwContinueStatus)|FailureIfNullRet
+kernel32.dll|LCID ConvertDefaultLocale( LCID Locale )
+kernel32.dll|BOOL ConvertFiberToThread()|FailureIfNullRet
+kernel32.dll|LPVOID ConvertThreadToFiber( LPVOID lpParameter)|Out
+kernel32.dll|BOOL CopyFileA( LPCSTR  lpExistingFileName, LPCSTR  lpNewFileName, BOOL bFailIfExists)|FailureIfNullRet
+kernel32.dll|BOOL CopyFileExA( LPCSTR  lpExistingFileName, LPCSTR  lpNewFileName, LPPROGRESS_ROUTINE lpProgressRoutine, LPVOID lpData, LPBOOL pbCancel, DWORD dwCopyFlags)|Out|FailureIfNullRet
+kernel32.dll|BOOL CopyFileExW( LPCWSTR lpExistingFileName, LPCWSTR lpNewFileName, LPPROGRESS_ROUTINE lpProgressRoutine, LPVOID lpData, LPBOOL pbCancel, DWORD dwCopyFlags)|Out|FailureIfNullRet
+kernel32.dll|BOOL CopyFileW( LPCWSTR lpExistingFileName, LPCWSTR lpNewFileName, BOOL bFailIfExists)|FailureIfNullRet
+kernel32.dll|LONG CopyLZFile(INT hfSource, INT hfDest);
+kernel32.dll|HANDLE CreateActCtxA( PACTCTX pActCtx)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateActCtxW( PACTCTX pActCtx)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateConsoleScreenBuffer( DWORD dwDesiredAccess, DWORD dwShareMode, const SECURITY_ATTRIBUTES* lpSecurityAttributes, DWORD dwFlags, LPVOID lpScreenBufferData)|Out|FailureIfNullRet
+kernel32.dll|BOOL CreateDirectoryA( LPCSTR  lpPathName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|BOOL CreateDirectoryExA( LPCSTR  lpTemplateDirectory, LPCSTR  lpNewDirectory, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|BOOL CreateDirectoryExW( LPCWSTR lpTemplateDirectory, LPCWSTR lpNewDirectory, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|BOOL CreateDirectoryW( LPCWSTR lpPathName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|LPVOID CreateFiber( SIZE_T dwStackSize, LPFIBER_START_ROUTINE lpStartAddress, LPVOID lpParameter)|Out
+kernel32.dll|LPVOID CreateFiberEx( SIZE_T dwStackCommitSize, SIZE_T dwStackReserveSize, DWORD dwFlags, LPFIBER_START_ROUTINE lpStartAddress, LPVOID lpParameter)|Out
+kernel32.dll|HANDLE CreateFileA( LPCSTR  lpFileName, DWORD dwDesiredAccess:Define=kernel32.dll/CreateFile_DesiredAccess.txt, DWORD dwShareMode:Define=kernel32.dll/CreateFile_ShareMode.txt, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition:Define=kernel32.dll/CreateFile_CreationDisposition.txt, DWORD dwFlagsAndAttributes:Define=kernel32.dll/CreateFile_FlagsAndAttributes.txt, HANDLE hTemplateFile)|FailureIfRetValue=0xFFFFFFFF
+kernel32.dll|HANDLE CreateFileMappingA( HANDLE hFile, LPSECURITY_ATTRIBUTES lpAttributes, DWORD flProtect, DWORD dwMaximumSizeHigh, DWORD dwMaximumSizeLow, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE CreateFileMappingW( HANDLE hFile, LPSECURITY_ATTRIBUTES lpAttributes, DWORD flProtect, DWORD dwMaximumSizeHigh, DWORD dwMaximumSizeLow, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HANDLE CreateFileW( LPCWSTR lpFileName, DWORD dwDesiredAccess:Define=kernel32.dll/CreateFile_DesiredAccess.txt, DWORD dwShareMode:Define=kernel32.dll/CreateFile_ShareMode.txt, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition:Define=kernel32.dll/CreateFile_CreationDisposition.txt, DWORD dwFlagsAndAttributes:Define=kernel32.dll/CreateFile_FlagsAndAttributes.txt, HANDLE hTemplateFile)|FailureIfRetValue=0xFFFFFFFF
+kernel32.dll|BOOL CreateHardLinkA( LPCSTR  lpFileName, LPCSTR  lpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|BOOL CreateHardLinkW( LPCWSTR lpFileName, LPCWSTR lpExistingFileName, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|HANDLE CreateIoCompletionPort( HANDLE FileHandle, HANDLE ExistingCompletionPort, ULONG_PTR CompletionKey, DWORD NumberOfConcurrentThreads)|FailureIfNullRet
+kernel32.dll|HANDLE CreateJobObjectA( LPSECURITY_ATTRIBUTES lpJobAttributes, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE CreateJobObjectW( LPSECURITY_ATTRIBUTES lpJobAttributes, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HANDLE CreateMailslotA( LPCSTR  lpName, DWORD nMaxMessageSize, DWORD lReadTimeout, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|HANDLE CreateMailslotW( LPCWSTR lpName, DWORD nMaxMessageSize, DWORD lReadTimeout, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|FailureIfNullRet
+kernel32.dll|HANDLE CreateMemoryResourceNotification( MEMORY_RESOURCE_NOTIFICATION_TYPE NotificationType)|FailureIfNullRet
+kernel32.dll|HANDLE CreateMutexA( LPSECURITY_ATTRIBUTES lpMutexAttributes, BOOL bInitialOwner, LPCSTR  lpName)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateMutexW( LPSECURITY_ATTRIBUTES lpMutexAttributes, BOOL bInitialOwner, LPCWSTR lpName)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateNamedPipeA( LPCSTR  lpName, DWORD dwOpenMode, DWORD dwPipeMode, DWORD nMaxInstances, DWORD nOutBufferSize, DWORD nInBufferSize, DWORD nDefaultTimeOut, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateNamedPipeW( LPCWSTR lpName, DWORD dwOpenMode, DWORD dwPipeMode, DWORD nMaxInstances, DWORD nOutBufferSize, DWORD nInBufferSize, DWORD nDefaultTimeOut, LPSECURITY_ATTRIBUTES lpSecurityAttributes)|Out|FailureIfNullRet
+kernel32.dll|BOOL CreatePipe( PHANDLE hReadPipe, PHANDLE hWritePipe, LPSECURITY_ATTRIBUTES lpPipeAttributes, DWORD nSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL CreateProcessA( LPCSTR  lpApplicationName, LPSTR  lpCommandLine, LPSECURITY_ATTRIBUTES lpProcessAttributes, LPSECURITY_ATTRIBUTES lpThreadAttributes, BOOL bInheritHandles, DWORD dwCreationFlags, LPVOID lpEnvironment, LPCSTR  lpCurrentDirectory, LPSTARTUPINFO lpStartupInfo, LPPROCESS_INFORMATION lpProcessInformation)|Out|FailureIfNullRet
+kernel32.dll|BOOL CreateProcessW( LPCWSTR lpApplicationName, LPWSTR lpCommandLine, LPSECURITY_ATTRIBUTES lpProcessAttributes, LPSECURITY_ATTRIBUTES lpThreadAttributes, BOOL bInheritHandles, DWORD dwCreationFlags, LPVOID lpEnvironment, LPCWSTR lpCurrentDirectory, LPSTARTUPINFO lpStartupInfo, LPPROCESS_INFORMATION lpProcessInformation)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateRemoteThread( HANDLE hProcess, LPSECURITY_ATTRIBUTES lpThreadAttributes, SIZE_T dwStackSize, LPTHREAD_START_ROUTINE lpStartAddress, LPVOID lpParameter, DWORD dwCreationFlags, LPDWORD lpThreadId)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateSemaphoreA( LPSECURITY_ATTRIBUTES lpSemaphoreAttributes, LONG lInitialCount, LONG lMaximumCount, LPCSTR  lpName)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateSemaphoreW( LPSECURITY_ATTRIBUTES lpSemaphoreAttributes, LONG lInitialCount, LONG lMaximumCount, LPCWSTR lpName)|Out|FailureIfNullRet
+kernel32.dll|DWORD CreateTapePartition( HANDLE hDevice, DWORD dwPartitionMethod, DWORD dwCount, DWORD dwSize)
+kernel32.dll|HANDLE CreateThread( LPSECURITY_ATTRIBUTES lpThreadAttributes, SIZE_T dwStackSize, LPTHREAD_START_ROUTINE lpStartAddress, LPVOID lpParameter, DWORD dwCreationFlags, LPDWORD lpThreadId)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateTimerQueue()|FailureIfNullRet
+kernel32.dll|BOOL CreateTimerQueueTimer( PHANDLE phNewTimer, HANDLE TimerQueue, WAITORTIMERCALLBACK Callback, PVOID Parameter, DWORD DueTime, DWORD Period, ULONG Flags)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateToolhelp32Snapshot( DWORD dwFlags, DWORD th32ProcessID)|FailureIfNullRet
+kernel32.dll|HANDLE CreateWaitableTimerA( LPSECURITY_ATTRIBUTES lpTimerAttributes, BOOL bManualReset, LPCSTR  lpTimerName)|Out|FailureIfNullRet
+kernel32.dll|HANDLE CreateWaitableTimerW( LPSECURITY_ATTRIBUTES lpTimerAttributes, BOOL bManualReset, LPCWSTR lpTimerName)|Out|FailureIfNullRet
+kernel32.dll|BOOL DeactivateActCtx( DWORD dwFlags, ULONG_PTR ulCookie)|FailureIfNullRet
+kernel32.dll|BOOL DebugActiveProcess( DWORD dwProcessId)|FailureIfNullRet
+kernel32.dll|BOOL DebugActiveProcessStop( DWORD dwProcessId)|FailureIfNullRet
+kernel32.dll|void DebugBreak()
+kernel32.dll|BOOL DebugBreakProcess( HANDLE Process)|FailureIfNullRet
+kernel32.dll|BOOL DebugSetProcessKillOnExit( BOOL KillOnExit)|FailureIfNullRet
+kernel32.dll|BOOL DefineDosDeviceA( DWORD dwFlags, LPCSTR  lpDeviceName, LPCSTR  lpTargetPath)|FailureIfNullRet
+kernel32.dll|BOOL DefineDosDeviceW( DWORD dwFlags, LPCWSTR lpDeviceName, LPCWSTR lpTargetPath)|FailureIfNullRet
+kernel32.dll|ATOM DeleteAtom( ATOM nAtom)
+kernel32.dll|void DeleteCriticalSection( LPCRITICAL_SECTION lpCriticalSection)
+kernel32.dll|VOID DeleteFiber( LPVOID lpFiber)|Out
+kernel32.dll|BOOL DeleteFileA( LPCSTR  lpFileName)|FailureIfNullRet
+kernel32.dll|BOOL DeleteFileW( LPCWSTR lpFileName)|FailureIfNullRet
+kernel32.dll|BOOL DeleteTimerQueue( HANDLE TimerQueue)|FailureIfNullRet
+kernel32.dll|BOOL DeleteTimerQueueEx( HANDLE TimerQueue, HANDLE CompletionEvent)|FailureIfNullRet
+kernel32.dll|BOOL DeleteTimerQueueTimer( HANDLE TimerQueue, HANDLE Timer, HANDLE CompletionEvent)|FailureIfNullRet
+kernel32.dll|BOOL DeleteVolumeMountPointA( LPCSTR  lpszVolumeMountPoint)|FailureIfNullRet
+kernel32.dll|BOOL DeleteVolumeMountPointW( LPCWSTR lpszVolumeMountPoint)|FailureIfNullRet
+kernel32.dll|BOOL DeviceIoControl( HANDLE hDevice, DWORD dwIoControlCode, LPVOID lpInBuffer:PointedDataSize=Arg4, DWORD nInBufferSize, LPVOID lpOutBuffer:PointedDataSize=Arg7, DWORD nOutBufferSize, LPDWORD lpBytesReturned, LPOVERLAPPED lpOverlapped)|Out|FailureIfNullRet|FailureIfLastErrorValue!=997
+kernel32.dll|BOOL DisableThreadLibraryCalls( HMODULE hModule)|FailureIfNullRet
+kernel32.dll|BOOL DisconnectNamedPipe( HANDLE hNamedPipe)|FailureIfNullRet
+kernel32.dll|BOOL DnsHostnameToComputerNameA( LPCSTR  Hostname, LPSTR  ComputerName, LPDWORD nSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL DnsHostnameToComputerNameW( LPCWSTR Hostname, LPWSTR ComputerName, LPDWORD nSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL DosDateTimeToFileTime( WORD wFatDate, WORD wFatTime, LPFILETIME lpFileTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL DuplicateHandle( HANDLE hSourceProcessHandle, HANDLE hSourceHandle, HANDLE hTargetProcessHandle, LPHANDLE lpTargetHandle, DWORD dwDesiredAccess, BOOL bInheritHandle, DWORD dwOptions)|Out|FailureIfNullRet
+kernel32.dll|BOOL EndUpdateResourceA( HANDLE hUpdate, BOOL fDiscard)|FailureIfNullRet
+kernel32.dll|BOOL EndUpdateResourceW( HANDLE hUpdate, BOOL fDiscard)|FailureIfNullRet
+!kernel32.dll|void EnterCriticalSection( LPCRITICAL_SECTION lpCriticalSection)
+kernel32.dll|BOOL EnumCalendarInfoA( CALINFO_ENUMPROC pCalInfoEnumProc, LCID Locale, CALID Calendar, CALTYPE CalType )|FailureIfNullRet
+kernel32.dll|BOOL EnumCalendarInfoExA( CALINFO_ENUMPROCEX pCalInfoEnumProcEx, LCID Locale, CALID Calendar, CALTYPE CalType )|FailureIfNullRet
+kernel32.dll|BOOL EnumCalendarInfoExW( CALINFO_ENUMPROCEX pCalInfoEnumProcEx, LCID Locale, CALID Calendar, CALTYPE CalType )|FailureIfNullRet
+kernel32.dll|BOOL EnumCalendarInfoW( CALINFO_ENUMPROC pCalInfoEnumProc, LCID Locale, CALID Calendar, CALTYPE CalType )|FailureIfNullRet
+kernel32.dll|BOOL EnumDateFormatsA( DATEFMT_ENUMPROC lpDateFmtEnumProc, LCID Locale, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumDateFormatsExA( DATEFMT_ENUMPROCEX lpDateFmtEnumProcEx, LCID Locale, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumDateFormatsExW( DATEFMT_ENUMPROCEX lpDateFmtEnumProcEx, LCID Locale, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumDateFormatsW( DATEFMT_ENUMPROC lpDateFmtEnumProc, LCID Locale, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumLanguageGroupLocalesA( LANGGROUPLOCALE_ENUMPROC pLangGroupLocaleEnumProc, LGRPID LanguageGroup, DWORD dwFlags, LONG_PTR lParam )|FailureIfNullRet
+kernel32.dll|BOOL EnumLanguageGroupLocalesW( LANGGROUPLOCALE_ENUMPROC pLangGroupLocaleEnumProc, LGRPID LanguageGroup, DWORD dwFlags, LONG_PTR lParam )|FailureIfNullRet
+kernel32.dll|BOOL EnumResourceLanguagesA( HMODULE hModule, LPCSTR  lpType, LPCSTR  lpName, ENUMRESLANGPROC lpEnumFunc, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumResourceLanguagesW( HMODULE hModule, LPCWSTR lpType, LPCWSTR lpName, ENUMRESLANGPROC lpEnumFunc, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumResourceNamesA( HMODULE hModule, LPCSTR  lpszType, ENUMRESNAMEPROC lpEnumFunc, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumResourceNamesW( HMODULE hModule, LPCWSTR lpszType, ENUMRESNAMEPROC lpEnumFunc, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumResourceTypesA( HMODULE hModule, ENUMRESTYPEPROC lpEnumFunc, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumResourceTypesW( HMODULE hModule, ENUMRESTYPEPROC lpEnumFunc, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumSystemCodePagesA( CODEPAGE_ENUMPROC lpCodePageEnumProc, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumSystemCodePagesW( CODEPAGE_ENUMPROC lpCodePageEnumProc, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumSystemGeoID( GEOCLASS GeoClass, GEOID ParentGeoId, GEO_ENUMPROC lpGeoEnumProc )|FailureIfNullRet
+kernel32.dll|BOOL EnumSystemLanguageGroupsA( LANGUAGEGROUP_ENUMPROC pLangGroupEnumProc, DWORD dwFlags, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumSystemLanguageGroupsW( LANGUAGEGROUP_ENUMPROC pLangGroupEnumProc, DWORD dwFlags, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumSystemLocalesA( LOCALE_ENUMPROC lpLocaleEnumProc, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|BOOL EnumSystemLocalesW( LOCALE_ENUMPROC lpLocaleEnumProc, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|BOOL EnumTimeFormatsA( TIMEFMT_ENUMPROC lpTimeFmtEnumProc, LCID Locale, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumTimeFormatsW( TIMEFMT_ENUMPROC lpTimeFmtEnumProc, LCID Locale, DWORD dwFlags )|FailureIfNullRet
+kernel32.dll|BOOL EnumUILanguagesA( UILANGUAGE_ENUMPROC lpUILanguageEnumProc, DWORD dwFlags, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|BOOL EnumUILanguagesW( UILANGUAGE_ENUMPROC lpUILanguageEnumProc, DWORD dwFlags, LONG_PTR lParam)|FailureIfNullRet
+kernel32.dll|DWORD EraseTape( HANDLE hDevice, DWORD dwEraseType, BOOL bImmediate)
+kernel32.dll|BOOL EscapeCommFunction( HANDLE hFile, DWORD dwFunc)|FailureIfNullRet
+;ExitProcess can create deadlock for unloading
+!kernel32.dll|VOID ExitProcess( UINT uExitCode)|InNoRet
+;ExitThread can create deadlock for unloading
+!kernel32.dll|VOID ExitThread( DWORD dwExitCode)
+kernel32.dll|DWORD ExpandEnvironmentStringsA( LPCSTR  lpSrc, LPSTR  lpDst, DWORD nSize)|Out
+kernel32.dll|DWORD ExpandEnvironmentStringsW( LPCWSTR lpSrc, LPWSTR lpDst, DWORD nSize)|Out
+kernel32.dll|void FatalAppExitA( UINT uAction, LPCSTR  lpMessageText)
+kernel32.dll|void FatalAppExitW( UINT uAction, LPCWSTR lpMessageText)
+kernel32.dll|void FatalExit( int ExitCode)
+kernel32.dll|BOOL FileTimeToDosDateTime( const FILETIME* lpFileTime, LPWORD lpFatDate, LPWORD lpFatTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL FileTimeToLocalFileTime( const FILETIME* lpFileTime, LPFILETIME lpLocalFileTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL FileTimeToSystemTime( const FILETIME* lpFileTime, LPSYSTEMTIME lpSystemTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL FillConsoleOutputAttribute( HANDLE hConsoleOutput, WORD wAttribute, DWORD nLength, COORD dwWriteCoord, LPDWORD lpNumberOfAttrsWritten)|Out|FailureIfNullRet
+kernel32.dll|BOOL FillConsoleOutputCharacterA( HANDLE hConsoleOutput, T HAR cCharacter, DWORD nLength, COORD dwWriteCoord, LPDWORD lpNumberOfCharsWritten)|Out|FailureIfNullRet
+kernel32.dll|BOOL FillConsoleOutputCharacterW( HANDLE hConsoleOutput, TWHAR cCharacter, DWORD nLength, COORD dwWriteCoord, LPDWORD lpNumberOfCharsWritten)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindActCtxSectionGuid( DWORD dwFlags, const GUID* lpExtensionGuid, ULONG ulSectionId, const GUID* lpGuidToFind, PACTCTX_SECTION_KEYED_DATA ReturnedData)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindActCtxSectionStringA( DWORD dwFlags, const GUID* lpExtensionGuid, ULONG ulSectionId, LPCSTR  lpStringToFind, PACTCTX_SECTION_KEYED_DATA ReturnedData)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindActCtxSectionStringW( DWORD dwFlags, const GUID* lpExtensionGuid, ULONG ulSectionId, LPCWSTR lpStringToFind, PACTCTX_SECTION_KEYED_DATA ReturnedData)|Out|FailureIfNullRet
+kernel32.dll|ATOM FindAtomA( LPCSTR  lpString)
+kernel32.dll|ATOM FindAtomW( LPCWSTR lpString)
+kernel32.dll|BOOL FindClose( HANDLE hFindFile)|FailureIfNullRet
+kernel32.dll|BOOL FindCloseChangeNotification( HANDLE hChangeHandle)|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstChangeNotificationA( LPCSTR  lpPathName, BOOL bWatchSubtree, DWORD dwNotifyFilter)|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstChangeNotificationW( LPCWSTR lpPathName, BOOL bWatchSubtree, DWORD dwNotifyFilter)|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstFileA( LPCSTR  lpFileName, LPWIN32_FIND_DATA lpFindFileData)|Out|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstFileExA( LPCSTR  lpFileName, FINDEX_INFO_LEVELS fInfoLevelId, LPWIN32_FIND_DATA lpFindFileData, FINDEX_SEARCH_OPS fSearchOp, LPVOID lpSearchFilter, DWORD dwAdditionalFlags)|Out|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstFileExW( LPCWSTR lpFileName, FINDEX_INFO_LEVELS fInfoLevelId, LPWIN32_FIND_DATAW lpFindFileData, FINDEX_SEARCH_OPS fSearchOp, LPVOID lpSearchFilter, DWORD dwAdditionalFlags)|Out|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstFileW( LPCWSTR lpFileName, LPWIN32_FIND_DATAW lpFindFileData)|Out|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstVolumeA( LPSTR  lpszVolumeName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstVolumeMountPointA( LPSTR  lpszRootPathName, LPSTR  lpszVolumeMountPoint, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstVolumeMountPointW( LPWSTR lpszRootPathName, LPWSTR lpszVolumeMountPoint, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|HANDLE FindFirstVolumeW( LPWSTR lpszVolumeName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindNextChangeNotification( HANDLE hChangeHandle)|FailureIfNullRet
+kernel32.dll|BOOL FindNextFileA( HANDLE hFindFile, LPWIN32_FIND_DATA lpFindFileData)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindNextFileW( HANDLE hFindFile, LPWIN32_FIND_DATAW lpFindFileData)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindNextVolumeA( HANDLE hFindVolume, LPSTR  lpszVolumeName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindNextVolumeMountPointA( HANDLE hFindVolumeMountPoint, LPSTR  lpszVolumeMountPoint, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindNextVolumeMountPointW( HANDLE hFindVolumeMountPoint, LPWSTR lpszVolumeMountPoint, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL FindNextVolumeW( HANDLE hFindVolume, LPWSTR lpszVolumeName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|HRSRC FindResourceA( HMODULE hModule, LPCSTR  lpName, LPCSTR  lpType)
+kernel32.dll|HRSRC FindResourceExA( HMODULE hModule, LPCSTR  lpType, LPCSTR  lpName, WORD wLanguage)
+kernel32.dll|HRSRC FindResourceExW( HMODULE hModule, LPCWSTR lpType, LPCWSTR lpName, WORD wLanguage)
+kernel32.dll|HRSRC FindResourceW( HMODULE hModule, LPCWSTR lpName, LPCWSTR lpType)
+kernel32.dll|BOOL FindVolumeClose( HANDLE hFindVolume)|FailureIfNullRet
+;FindVolumeMountPointClose same addr that FindCloseChangeNotification
+;kernel32.dll|BOOL FindVolumeMountPointClose( HANDLE hFindVolumeMountPoint)
+kernel32.dll|BOOL FlushConsoleInputBuffer( HANDLE hConsoleInput)|FailureIfNullRet
+kernel32.dll|BOOL FlushFileBuffers( HANDLE hFile)|FailureIfNullRet
+kernel32.dll|BOOL FlushInstructionCache( HANDLE hProcess, LPCVOID lpBaseAddress, SIZE_T dwSize)|FailureIfNullRet
+kernel32.dll|BOOL FlushViewOfFile( LPCVOID lpBaseAddress, SIZE_T dwNumberOfBytesToFlush)|FailureIfNullRet
+kernel32.dll|int FoldStringA( DWORD dwMapFlags, LPCSTR  lpSrcStr, int cchSrc, LPSTR  lpDestStr, int cchDest)|Out
+kernel32.dll|int FoldStringW( DWORD dwMapFlags, LPCWSTR lpSrcStr, int cchSrc, LPWSTR lpDestStr, int cchDest)|Out
+kernel32.dll|DWORD FormatMessageA( DWORD dwFlags, LPCVOID lpSource, DWORD dwMessageId, DWORD dwLanguageId, LPSTR  lpBuffer, DWORD nSize, va_list* Arguments)|Out
+kernel32.dll|DWORD FormatMessageW( DWORD dwFlags, LPCVOID lpSource, DWORD dwMessageId, DWORD dwLanguageId, LPWSTR lpBuffer, DWORD nSize, va_list* Arguments)|Out
+kernel32.dll|BOOL FreeConsole()|FailureIfNullRet
+kernel32.dll|BOOL FreeEnvironmentStringsA( LPTCH lpszEnvironmentBlock)|Out|FailureIfNullRet
+kernel32.dll|BOOL FreeEnvironmentStringsW( LPTCH lpszEnvironmentBlock)|Out|FailureIfNullRet
+kernel32.dll|BOOL FreeLibrary( HMODULE hModule)|FailureIfNullRet
+;FreeLibraryAndExitThread can cause deadlock when stopping overriding
+!kernel32.dll|VOID FreeLibraryAndExitThread( HMODULE hModule, DWORD dwExitCode)
+kernel32.dll|BOOL FreeResource( HGLOBAL hglbResource)|FailureIfNullRet
+kernel32.dll|BOOL FreeUserPhysicalPages( HANDLE hProcess, PULONG_PTR NumberOfPages, PULONG_PTR UserPfnArray)|Out|FailureIfNullRet
+kernel32.dll|BOOL GenerateConsoleCtrlEvent( DWORD dwCtrlEvent, DWORD dwProcessGroupId)|FailureIfNullRet
+kernel32.dll|UINT GetACP()
+kernel32.dll|UINT GetAtomNameA( ATOM nAtom, LPSTR  lpBuffer, int nSize)|Out
+kernel32.dll|UINT GetAtomNameW( ATOM nAtom, LPWSTR lpBuffer, int nSize)|Out
+kernel32.dll|BOOL GetBinaryType( LPCSTR  lpApplicationName, LPDWORD lpBinaryType)|Out|FailureIfNullRet
+;GetBinaryTypeA returns same pointer as GetBinaryType
+;kernel32.dll|BOOL GetBinaryTypeA( LPCSTR  lpApplicationName, LPDWORD lpBinaryType)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetBinaryTypeW( LPCSTR  lpApplicationName, LPDWORD lpBinaryType)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCPInfo( UINT CodePage, LPCPINFO lpCPInfo )|FailureIfNullRet
+kernel32.dll|BOOL GetCPInfoExA( UINT CodePage, DWORD dwFlags, LPCPINFOEX lpCPInfoEx )|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCPInfoExW( UINT CodePage, DWORD dwFlags, LPCPINFOEX lpCPInfoEx )|Out|FailureIfNullRet
+kernel32.dll|int GetCalendarInfoA( LCID Locale, CALID Calendar, CALTYPE CalType, LPSTR  lpCalData, int cchData, LPDWORD lpValue )|Out
+kernel32.dll|int GetCalendarInfoW( LCID Locale, CALID Calendar, CALTYPE CalType, LPWSTR lpCalData, int cchData, LPDWORD lpValue )|Out
+kernel32.dll|ULONG GetComPlusPackageInstallStatus()
+kernel32.dll|BOOL GetCommConfig( HANDLE hCommDev, LPCOMMCONFIG lpCC, LPDWORD lpdwSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCommMask( HANDLE hFile, LPDWORD lpEvtMask)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCommModemStatus( HANDLE hFile, LPDWORD lpModemStat)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCommProperties( HANDLE hFile, LPCOMMPROP lpCommProp)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCommState( HANDLE hFile, LPDCB lpDCB)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCommTimeouts( HANDLE hFile, LPCOMMTIMEOUTS lpCommTimeouts)|Out|FailureIfNullRet
+kernel32.dll|LPSTR  GetCommandLineA()
+kernel32.dll|LPWSTR GetCommandLineW()
+kernel32.dll|DWORD GetCompressedFileSizeA( LPCSTR  lpFileName, LPDWORD lpFileSizeHigh)|Out
+kernel32.dll|DWORD GetCompressedFileSizeW( LPCWSTR lpFileName, LPDWORD lpFileSizeHigh)|Out
+kernel32.dll|BOOL GetComputerNameA( LPSTR  lpBuffer, LPDWORD lpnSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetComputerNameExA( COMPUTER_NAME_FORMAT NameType, LPSTR  lpBuffer, LPDWORD lpnSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetComputerNameExW( COMPUTER_NAME_FORMAT NameType, LPWSTR lpBuffer, LPDWORD lpnSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetComputerNameW( LPWSTR lpBuffer, LPDWORD lpnSize)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetConsoleAliasA( LPSTR  lpSource, LPSTR  lpTargetBuffer, DWORD TargetBufferLength, LPSTR  lpExeName)|Out
+kernel32.dll|DWORD GetConsoleAliasExesA( LPSTR  lpExeNameBuffer, DWORD ExeNameBufferLength)|Out
+kernel32.dll|DWORD GetConsoleAliasExesLengthA()
+kernel32.dll|DWORD GetConsoleAliasExesLengthW()
+kernel32.dll|DWORD GetConsoleAliasExesW( LPWSTR lpExeNameBuffer, DWORD ExeNameBufferLength)|Out
+kernel32.dll|DWORD GetConsoleAliasW( LPWSTR lpSource, LPWSTR lpTargetBuffer, DWORD TargetBufferLength, LPWSTR lpExeName)|Out
+kernel32.dll|DWORD GetConsoleAliasesA( LPSTR  lpAliasBuffer, DWORD AliasBufferLength, LPSTR  lpExeName)|Out
+kernel32.dll|DWORD GetConsoleAliasesLengthA( LPSTR  lpExeName)|Out
+kernel32.dll|DWORD GetConsoleAliasesLengthW( LPWSTR lpExeName)|Out
+kernel32.dll|DWORD GetConsoleAliasesW( LPWSTR lpAliasBuffer, DWORD AliasBufferLength, LPWSTR lpExeName)|Out
+kernel32.dll|UINT GetConsoleCP()
+kernel32.dll|BOOL GetConsoleCursorInfo( HANDLE hConsoleOutput, PCONSOLE_CURSOR_INFO lpConsoleCursorInfo)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetConsoleDisplayMode( LPDWORD lpModeFlags)|Out|FailureIfNullRet
+kernel32.dll|COORD GetConsoleFontSize( HANDLE hConsoleOutput, DWORD nFont)
+kernel32.dll|BOOL GetConsoleMode( HANDLE hConsoleHandle, LPDWORD lpMode)|Out
+kernel32.dll|UINT GetConsoleOutputCP()
+kernel32.dll|DWORD GetConsoleProcessList( LPDWORD lpdwProcessList, DWORD dwProcessCount)|Out
+kernel32.dll|BOOL GetConsoleScreenBufferInfo( HANDLE hConsoleOutput, PCONSOLE_SCREEN_BUFFER_INFO lpConsoleScreenBufferInfo)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetConsoleSelectionInfo( PCONSOLE_SELECTION_INFO lpConsoleSelectionInfo)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetConsoleTitleA( LPSTR  lpConsoleTitle, DWORD nSize)|Out
+kernel32.dll|DWORD GetConsoleTitleW( LPWSTR lpConsoleTitle, DWORD nSize)|Out
+kernel32.dll|HWND GetConsoleWindow()
+kernel32.dll|int GetCurrencyFormatA( LCID Locale, DWORD dwFlags, LPCSTR  lpValue, CONST CURRENCYFMT* lpFormat, LPSTR  lpCurrencyStr, int cchCurrency )|Out
+kernel32.dll|int GetCurrencyFormatW( LCID Locale, DWORD dwFlags, LPCWSTR lpValue, CONST CURRENCYFMT* lpFormat, LPWSTR lpCurrencyStr, int cchCurrency )|Out
+kernel32.dll|BOOL GetCurrentActCtx( HANDLE* lphActCtx)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetCurrentConsoleFont( HANDLE hConsoleOutput, BOOL bMaximumWindow, PCONSOLE_FONT_INFO lpConsoleCurrentFont)|FailureIfNullRet
+kernel32.dll|DWORD GetCurrentDirectoryA( DWORD nBufferLength, LPSTR  lpBuffer)|Out
+kernel32.dll|DWORD GetCurrentDirectoryW( DWORD nBufferLength, LPWSTR lpBuffer)|Out
+;GetCurrentProcess : make processes crash : reason func is 4 bytes length only (on some version of dll) and our hooks require 5 bytes --> impossible to hook
+;kernel32.dll|HANDLE GetCurrentProcess()
+;lots of call
+!kernel32.dll|DWORD GetCurrentProcessId()
+;lots of call
+!kernel32.dll|HANDLE GetCurrentThread()
+;lots of call
+!kernel32.dll|DWORD GetCurrentThreadId()
+kernel32.dll|int GetDateFormatA( LCID Locale, DWORD dwFlags, CONST SYSTEMTIME* lpDate, LPCSTR  lpFormat, LPSTR  lpDateStr, int cchDate )|Out
+kernel32.dll|int GetDateFormatW( LCID Locale, DWORD dwFlags, CONST SYSTEMTIME* lpDate, LPCWSTR lpFormat, LPWSTR lpDateStr, int cchDate )|Out
+kernel32.dll|int GetTimeFormatA( LCID Locale, DWORD dwFlags, CONST SYSTEMTIME* lpTime, LPCSTR  lpFormat, LPSTR  lpTimeStr, int cchTime )|Out
+kernel32.dll|int GetTimeFormatW( LCID Locale, DWORD dwFlags, CONST SYSTEMTIME* lpTime, LPCWSTR lpFormat, LPWSTR lpTimeStr, int cchTime )|Out
+kernel32.dll|BOOL GetDefaultCommConfigA( LPCSTR  lpszName, LPCOMMCONFIG lpCC, LPDWORD lpdwSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetDefaultCommConfigW( LPCWSTR lpszName, LPCOMMCONFIG lpCC, LPDWORD lpdwSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetDevicePowerState( HANDLE hDevice, BOOL* pfOn)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetDiskFreeSpaceA( LPCSTR  lpRootPathName, LPDWORD lpSectorsPerCluster, LPDWORD lpBytesPerSector, LPDWORD lpNumberOfFreeClusters, LPDWORD lpTotalNumberOfClusters)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetDiskFreeSpaceExA( LPCSTR  lpDirectoryName, PULARGE_INTEGER lpFreeBytesAvailable, PULARGE_INTEGER lpTotalNumberOfBytes, PULARGE_INTEGER lpTotalNumberOfFreeBytes)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetDiskFreeSpaceExW( LPCWSTR lpDirectoryName, PULARGE_INTEGER lpFreeBytesAvailable, PULARGE_INTEGER lpTotalNumberOfBytes, PULARGE_INTEGER lpTotalNumberOfFreeBytes)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetDiskFreeSpaceW( LPCWSTR lpRootPathName, LPDWORD lpSectorsPerCluster, LPDWORD lpBytesPerSector, LPDWORD lpNumberOfFreeClusters, LPDWORD lpTotalNumberOfClusters)|Out|FailureIfNullRet
+!kernel32.dll|DWORD GetDllDirectoryA( DWORD nBufferLength, LPSTR  lpBuffer)|Out
+!kernel32.dll|DWORD GetDllDirectoryW( DWORD nBufferLength, LPWSTR lpBuffer)|Out
+kernel32.dll|UINT GetDriveTypeA( LPCSTR  lpRootPathName)
+kernel32.dll|UINT GetDriveTypeW( LPCWSTR lpRootPathName)
+kernel32.dll|LPVOID GetEnvironmentStrings()
+; same as GetEnvironmentStrings
+;kernel32.dll|LPVOID GetEnvironmentStringsA()
+kernel32.dll|LPVOID GetEnvironmentStringsW()
+kernel32.dll|DWORD GetEnvironmentVariableA( LPCSTR  lpName, LPSTR  lpBuffer, DWORD nSize)|Out
+kernel32.dll|DWORD GetEnvironmentVariableW( LPCWSTR lpName, LPWSTR lpBuffer, DWORD nSize)|Out
+kernel32.dll|BOOL GetExitCodeProcess( HANDLE hProcess, LPDWORD lpExitCode)|Out
+kernel32.dll|BOOL GetExitCodeThread( HANDLE hThread, LPDWORD lpExitCode)|Out
+kernel32.dll|INT GetExpandedNameA( LPSTR  lpszSource, LPSTR  lpszBuffer)|Out
+kernel32.dll|INT GetExpandedNameW( LPWSTR lpszSource, LPWSTR lpszBuffer)|Out
+kernel32.dll|DWORD GetFileAttributesA( LPCSTR  lpFileName)
+kernel32.dll|BOOL GetFileAttributesExA( LPCSTR  lpFileName, GET_FILEEX_INFO_LEVELS fInfoLevelId, LPVOID lpFileInformation)|Out
+kernel32.dll|BOOL GetFileAttributesExW( LPCWSTR lpFileName, GET_FILEEX_INFO_LEVELS fInfoLevelId, LPVOID lpFileInformation)|Out
+kernel32.dll|DWORD GetFileAttributesW( LPCWSTR lpFileName)
+kernel32.dll|BOOL GetFileInformationByHandle( HANDLE hFile, LPBY_HANDLE_FILE_INFORMATION lpFileInformation)|Out
+kernel32.dll|DWORD GetFileSize( HANDLE hFile, LPDWORD lpFileSizeHigh)|Out
+kernel32.dll|BOOL GetFileSizeEx( HANDLE hFile, PLARGE_INTEGER lpFileSize)|Out
+kernel32.dll|BOOL GetFileTime( HANDLE hFile, LPFILETIME lpCreationTime, LPFILETIME lpLastAccessTime, LPFILETIME lpLastWriteTime)|Out
+kernel32.dll|DWORD GetFileType( HANDLE hFile)
+kernel32.dll|DWORD GetFirmwareEnvironmentVariableA( LPCSTR  lpName, LPCSTR  lpGuid, PVOID pBuffer, DWORD nSize)|Out
+kernel32.dll|DWORD GetFirmwareEnvironmentVariableW( LPCWSTR lpName, LPCWSTR lpGuid, PVOID pBuffer, DWORD nSize)|Out
+kernel32.dll|DWORD GetFullPathNameA( LPCSTR  lpFileName, DWORD nBufferLength, LPSTR  lpBuffer, LPSTR* lpFilePart)|Out
+kernel32.dll|DWORD GetFullPathNameW( LPCWSTR lpFileName, DWORD nBufferLength, LPWSTR lpBuffer, LPWSTR* lpFilePart)|Out
+kernel32.dll|int GetGeoInfoA( GEOID GeoId, GEOTYPE GeoType, LPSTR  lpGeoData, int cchData, LANGID language )|Out
+kernel32.dll|int GetGeoInfoW( GEOID GeoId, GEOTYPE GeoType, LPWSTR lpGeoData, int cchData, LANGID language )|Out
+kernel32.dll|BOOL GetHandleInformation( HANDLE hObject, LPDWORD lpdwFlags)|Out|FailureIfNullRet
+kernel32.dll|COORD GetLargestConsoleWindowSize( HANDLE hConsoleOutput)
+; lots of call
+!kernel32.dll|DWORD GetLastError()
+;lots of call
+!kernel32.dll|void GetLocalTime( LPSYSTEMTIME lpSystemTime)|Out
+kernel32.dll|int GetLocaleInfoA( LCID Locale, LCTYPE LCType, LPSTR  lpLCData, int cchData )|Out
+kernel32.dll|int GetLocaleInfoW( LCID Locale, LCTYPE LCType, LPWSTR lpLCData, int cchData )|Out
+kernel32.dll|DWORD GetLogicalDriveStringsA( DWORD nBufferLength, LPSTR  lpBuffer)|Out
+kernel32.dll|DWORD GetLogicalDriveStringsW( DWORD nBufferLength, LPWSTR lpBuffer)|Out
+kernel32.dll|DWORD GetLogicalDrives()
+kernel32.dll|DWORD GetLongPathNameA( LPCSTR  lpszShortPath, LPSTR  lpszLongPath, DWORD cchBuffer)|Out
+kernel32.dll|DWORD GetLongPathNameW( LPCWSTR lpszShortPath, LPWSTR lpszLongPath, DWORD cchBuffer)|Out
+;lots of call
+!kernel32.dll|BOOL GetMailslotInfo( HANDLE hMailslot, LPDWORD lpMaxMessageSize, LPDWORD lpNextSize, LPDWORD lpMessageCount, LPDWORD lpReadTimeout)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetModuleFileNameA( HMODULE hModule, LPSTR  lpFilename, DWORD nSize)|Out
+kernel32.dll|DWORD GetModuleFileNameW( HMODULE hModule, LPWSTR lpFilename, DWORD nSize)|Out
+kernel32.dll|BOOL GetNamedPipeHandleStateA( HANDLE hNamedPipe, LPDWORD lpState, LPDWORD lpCurInstances, LPDWORD lpMaxCollectionCount, LPDWORD lpCollectDataTimeout, LPSTR  lpUserName, DWORD nMaxUserNameSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetNamedPipeHandleStateW( HANDLE hNamedPipe, LPDWORD lpState, LPDWORD lpCurInstances, LPDWORD lpMaxCollectionCount, LPDWORD lpCollectDataTimeout, LPWSTR lpUserName, DWORD nMaxUserNameSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetNamedPipeInfo( HANDLE hNamedPipe, LPDWORD lpFlags, LPDWORD lpOutBufferSize, LPDWORD lpInBufferSize, LPDWORD lpMaxInstances)|Out|FailureIfNullRet
+kernel32.dll|void GetNativeSystemInfo( LPSYSTEM_INFO lpSystemInfo)|Out
+kernel32.dll|BOOL GetNumaAvailableMemoryNode( UCHAR Node, PULONGLONG AvailableBytes)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetNumaHighestNodeNumber( PULONG HighestNodeNumber)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetNumaNodeProcessorMask( UCHAR Node, PULONGLONG ProcessorMask)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetNumaProcessorNode( UCHAR Processor, PUCHAR NodeNumber)|Out|FailureIfNullRet
+kernel32.dll|int GetNumberFormatA( LCID Locale, DWORD dwFlags, LPCSTR  lpValue, CONST NUMBERFMT* lpFormat, LPSTR  lpNumberStr, int cchNumber )|Out
+kernel32.dll|int GetNumberFormatW( LCID Locale, DWORD dwFlags, LPCWSTR lpValue, CONST NUMBERFMT* lpFormat, LPWSTR lpNumberStr, int cchNumber )|Out
+kernel32.dll|BOOL GetNumberOfConsoleInputEvents( HANDLE hConsoleInput, LPDWORD lpcNumberOfEvents)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetNumberOfConsoleMouseButtons( LPDWORD lpNumberOfMouseButtons)|Out|FailureIfNullRet
+kernel32.dll|UINT GetOEMCP()
+kernel32.dll|BOOL GetOverlappedResult( HANDLE hFile, LPOVERLAPPED lpOverlapped, LPDWORD lpNumberOfBytesTransferred, BOOL bWait)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetPriorityClass( HANDLE hProcess)|FailureIfNullRet
+kernel32.dll|UINT GetPrivateProfileIntA( LPCSTR  lpAppName, LPCSTR  lpKeyName, INT nDefault, LPCSTR  lpFileName)
+kernel32.dll|UINT GetPrivateProfileIntW( LPCWSTR lpAppName, LPCWSTR lpKeyName, INT nDefault, LPCWSTR lpFileName)
+kernel32.dll|DWORD GetPrivateProfileSectionA( LPCSTR  lpAppName, LPSTR  lpReturnedString, DWORD nSize, LPCSTR  lpFileName)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetPrivateProfileSectionNamesA( LPSTR  lpszReturnBuffer, DWORD nSize, LPCSTR  lpFileName)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetPrivateProfileSectionNamesW( LPWSTR lpszReturnBuffer, DWORD nSize, LPCWSTR lpFileName)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetPrivateProfileSectionW( LPCWSTR lpAppName, LPWSTR lpReturnedString, DWORD nSize, LPCWSTR lpFileName)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetPrivateProfileStringA( LPCSTR  lpAppName, LPCSTR  lpKeyName, LPCSTR  lpDefault, LPSTR  lpReturnedString, DWORD nSize, LPCSTR  lpFileName)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetPrivateProfileStringW( LPCWSTR lpAppName, LPCWSTR lpKeyName, LPCWSTR lpDefault, LPWSTR lpReturnedString, DWORD nSize, LPCWSTR lpFileName)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetPrivateProfileStructA( LPCSTR  lpszSection, LPCSTR  lpszKey, LPVOID lpStruct, UINT uSizeStruct, LPCSTR  szFile)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetPrivateProfileStructW( LPCWSTR lpszSection, LPCWSTR lpszKey, LPVOID lpStruct, UINT uSizeStruct, LPCWSTR szFile)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetProcessAffinityMask( HANDLE hProcess, PDWORD_PTR lpProcessAffinityMask, PDWORD_PTR lpSystemAffinityMask)|Out|FailureIfNullRet
+!kernel32.dll|BOOL GetProcessHandleCount( HANDLE hProcess, PDWORD pdwHandleCount)|Out|FailureIfNullRet
+;lots of call
+!kernel32.dll|HANDLE GetProcessHeap()
+kernel32.dll|DWORD GetProcessHeaps( DWORD NumberOfHeaps, PHANDLE ProcessHeaps)|Out
+!kernel32.dll|DWORD GetProcessId( HANDLE Process)|Out
+kernel32.dll|BOOL GetProcessIoCounters( HANDLE hProcess, PIO_COUNTERS lpIoCounters)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetProcessPriorityBoost( HANDLE hProcess, PBOOL pDisablePriorityBoost)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetProcessShutdownParameters( LPDWORD lpdwLevel, LPDWORD lpdwFlags)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetProcessTimes( HANDLE hProcess, LPFILETIME lpCreationTime, LPFILETIME lpExitTime, LPFILETIME lpKernelTime, LPFILETIME lpUserTime)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetProcessVersion( DWORD ProcessId)|Out
+kernel32.dll|BOOL GetProcessWorkingSetSize( HANDLE hProcess, PSIZE_T lpMinimumWorkingSetSize, PSIZE_T lpMaximumWorkingSetSize)|Out|FailureIfNullRet
+kernel32.dll|UINT GetProfileIntA( LPCSTR  lpAppName, LPCSTR  lpKeyName, INT nDefault)
+kernel32.dll|UINT GetProfileIntW( LPCWSTR lpAppName, LPCWSTR lpKeyName, INT nDefault)
+kernel32.dll|DWORD GetProfileSectionA( LPCSTR  lpAppName, LPSTR  lpReturnedString, DWORD nSize)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetProfileSectionW( LPCWSTR lpAppName, LPWSTR lpReturnedString, DWORD nSize)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetProfileStringA( LPCSTR  lpAppName, LPCSTR  lpKeyName, LPCSTR  lpDefault, LPSTR  lpReturnedString, DWORD nSize)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetProfileStringW( LPCWSTR lpAppName, LPCWSTR lpKeyName, LPCWSTR lpDefault, LPWSTR lpReturnedString, DWORD nSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetQueuedCompletionStatus( HANDLE CompletionPort, LPDWORD lpNumberOfBytes, PULONG_PTR lpCompletionKey, LPOVERLAPPED* lpOverlapped, DWORD dwMilliseconds)|Out
+kernel32.dll|DWORD GetShortPathNameA( LPCSTR  lpszLongPath, LPSTR  lpszShortPath, DWORD cchBuffer)|Out
+kernel32.dll|DWORD GetShortPathNameW( LPCWSTR lpszLongPath, LPWSTR lpszShortPath, DWORD cchBuffer)|Out
+kernel32.dll|VOID GetStartupInfoA( LPSTARTUPINFO lpStartupInfo)|Out
+kernel32.dll|VOID GetStartupInfoW( LPSTARTUPINFO lpStartupInfo)|Out
+kernel32.dll|HANDLE GetStdHandle( DWORD nStdHandle)
+kernel32.dll|HRESULT GetStringTypeA( USER_INPUT_STRING_TYPE* pnStringType)|Out
+!kernel32.dll|HRESULT GetStringTypeW( USER_INPUT_STRING_TYPE* pnStringType)|Out
+kernel32.dll|LCID GetSystemDefaultLCID()
+kernel32.dll|LANGID GetSystemDefaultLangID()
+kernel32.dll|LANGID GetSystemDefaultUILanguage()
+kernel32.dll|UINT GetSystemDirectoryA( LPSTR  lpBuffer, UINT uSize)|Out
+kernel32.dll|UINT GetSystemDirectoryW( LPWSTR lpBuffer, UINT uSize)|Out
+kernel32.dll|void GetSystemInfo( LPSYSTEM_INFO lpSystemInfo)|Out
+kernel32.dll|BOOL GetSystemPowerStatus( LPSYSTEM_POWER_STATUS lpSystemPowerStatus)|Out|FailureIfNullRet
+!kernel32.dll|BOOL GetSystemRegistryQuota( PDWORD pdwQuotaAllowed, PDWORD pdwQuotaUsed)|Out|FailureIfNullRet
+kernel32.dll|void GetSystemTime( LPSYSTEMTIME lpSystemTime)|Out
+kernel32.dll|BOOL GetSystemTimeAdjustment( PDWORD lpTimeAdjustment, PDWORD lpTimeIncrement, PBOOL lpTimeAdjustmentDisabled)|Out|FailureIfNullRet
+kernel32.dll|void GetSystemTimeAsFileTime( LPFILETIME lpSystemTimeAsFileTime)|Out
+!kernel32.dll|BOOL GetSystemTimes( LPFILETIME lpIdleTime, LPFILETIME lpKernelTime, LPFILETIME lpUserTime)|Out|FailureIfNullRet
+kernel32.dll|UINT GetSystemWindowsDirectoryA( LPSTR  lpBuffer, UINT uSize)|Out
+kernel32.dll|UINT GetSystemWindowsDirectoryW( LPWSTR lpBuffer, UINT uSize)|Out
+;GetSystemWow64DirectoryA same as SetHandleContext
+!kernel32.dll|UINT GetSystemWow64DirectoryA( LPSTR  lpBuffer, UINT uSize)|Out
+;GetSystemWow64DirectoryW same as GetSystemWow64DirectoryA
+!kernel32.dll|UINT GetSystemWow64DirectoryW( LPWSTR lpBuffer, UINT uSize)|Out
+kernel32.dll|DWORD GetTapeParameters( HANDLE hDevice, DWORD dwOperation, LPDWORD lpdwSize, LPVOID lpTapeInformation)|Out
+kernel32.dll|DWORD GetTapePosition( HANDLE hDevice, DWORD dwPositionType, LPDWORD lpdwPartition, LPDWORD lpdwOffsetLow, LPDWORD lpdwOffsetHigh)|Out
+kernel32.dll|DWORD GetTapeStatus( HANDLE hDevice)
+kernel32.dll|UINT GetTempFileNameA( LPCSTR  lpPathName, LPCSTR  lpPrefixString, UINT uUnique, LPSTR  lpTempFileName)|Out
+kernel32.dll|UINT GetTempFileNameW( LPCWSTR lpPathName, LPCWSTR lpPrefixString, UINT uUnique, LPWSTR lpTempFileName)|Out
+kernel32.dll|DWORD GetTempPathA( DWORD nBufferLength, LPSTR  lpBuffer)|Out
+kernel32.dll|DWORD GetTempPathW( DWORD nBufferLength, LPWSTR lpBuffer)|Out
+kernel32.dll|BOOL GetThreadContext( HANDLE hThread, LPCONTEXT lpContext)|FailureIfNullRet
+!kernel32.dll|BOOL GetThreadIOPendingFlag( HANDLE hThread, PBOOL lpIOIsPending)|Out|FailureIfNullRet
+kernel32.dll|LCID GetThreadLocale()
+;lots of call
+!kernel32.dll|int GetThreadPriority( HANDLE hThread)
+kernel32.dll|BOOL GetThreadPriorityBoost( HANDLE hThread, PBOOL pDisablePriorityBoost)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetThreadSelectorEntry( HANDLE hThread, DWORD dwSelector, LPLDT_ENTRY lpSelectorEntry)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetThreadTimes( HANDLE hThread, LPFILETIME lpCreationTime, LPFILETIME lpExitTime, LPFILETIME lpKernelTime, LPFILETIME lpUserTime)|Out|FailureIfNullRet
+kernel32.dll|DWORD GetTickCount()
+kernel32.dll|DWORD GetTimeZoneInformation( LPTIME_ZONE_INFORMATION lpTimeZoneInformation)|Out
+;lots of call
+!kernel32.dll|LCID GetUserDefaultLCID()
+kernel32.dll|LANGID GetUserDefaultLangID()
+kernel32.dll|LANGID GetUserDefaultUILanguage()
+kernel32.dll|GEOID GetUserGeoID( GEOCLASS GeoClass )
+kernel32.dll|DWORD GetVersion()
+kernel32.dll|BOOL GetVersionExA( LPOSVERSIONINFOA lpVersionInfo)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVersionExW( LPOSVERSIONINFOW lpVersionInfo)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumeInformationA( LPCSTR  lpRootPathName, LPSTR  lpVolumeNameBuffer, DWORD nVolumeNameSize, LPDWORD lpVolumeSerialNumber, LPDWORD lpMaximumComponentLength, LPDWORD lpFileSystemFlags, LPSTR  lpFileSystemNameBuffer, DWORD nFileSystemNameSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumeInformationW( LPCWSTR lpRootPathName, LPWSTR lpVolumeNameBuffer, DWORD nVolumeNameSize, LPDWORD lpVolumeSerialNumber, LPDWORD lpMaximumComponentLength, LPDWORD lpFileSystemFlags, LPWSTR lpFileSystemNameBuffer, DWORD nFileSystemNameSize)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumeNameForVolumeMountPointA( LPCSTR  lpszVolumeMountPoint, LPSTR  lpszVolumeName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumeNameForVolumeMountPointW( LPCWSTR lpszVolumeMountPoint, LPWSTR lpszVolumeName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumePathNameA( LPCSTR  lpszFileName, LPSTR  lpszVolumePathName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumePathNameW( LPCWSTR lpszFileName, LPWSTR lpszVolumePathName, DWORD cchBufferLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumePathNamesForVolumeNameA( LPCSTR  lpszVolumeName, LPSTR  lpszVolumePathNames, DWORD cchBufferLength, PDWORD lpcchReturnLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetVolumePathNamesForVolumeNameW( LPCWSTR lpszVolumeName, LPWSTR lpszVolumePathNames, DWORD cchBufferLength, PDWORD lpcchReturnLength)|Out|FailureIfNullRet
+kernel32.dll|UINT GetWindowsDirectoryA( LPSTR  lpBuffer, UINT uSize)|Out
+kernel32.dll|UINT GetWindowsDirectoryW( LPWSTR lpBuffer, UINT uSize)|Out
+kernel32.dll|UINT GetWriteWatch( DWORD dwFlags, PVOID lpBaseAddress, SIZE_T dwRegionSize, PVOID* lpAddresses, PULONG_PTR lpdwCount, PULONG lpdwGranularity)|Out
+kernel32.dll|ATOM GlobalAddAtomA( LPCSTR  lpString)
+kernel32.dll|ATOM GlobalAddAtomW( LPCWSTR lpString)
+kernel32.dll|HGLOBAL GlobalAlloc( UINT uFlags, SIZE_T dwBytes)
+kernel32.dll|ATOM GlobalDeleteAtom( ATOM nAtom)
+kernel32.dll|ATOM GlobalFindAtomA( LPCSTR  lpString)
+kernel32.dll|ATOM GlobalFindAtomW( LPCWSTR lpString)
+kernel32.dll|UINT GlobalFlags( HGLOBAL hMem)
+kernel32.dll|HGLOBAL GlobalFree( HGLOBAL hMem)
+kernel32.dll|UINT GlobalGetAtomNameA( ATOM nAtom, LPSTR  lpBuffer, int nSize)|Out
+kernel32.dll|UINT GlobalGetAtomNameW( ATOM nAtom, LPWSTR lpBuffer, int nSize)|Out
+kernel32.dll|HGLOBAL GlobalHandle( LPCVOID pMem)
+kernel32.dll|LPVOID GlobalLock( HGLOBAL hMem)
+kernel32.dll|void GlobalMemoryStatus( LPMEMORYSTATUS lpBuffer)|Out
+kernel32.dll|BOOL GlobalMemoryStatusEx( LPMEMORYSTATUSEX lpBuffer)|Out
+kernel32.dll|HGLOBAL GlobalReAlloc( HGLOBAL hMem, SIZE_T dwBytes, UINT uFlags)
+kernel32.dll|SIZE_T GlobalSize( HGLOBAL hMem)|FailureIfNullRet
+kernel32.dll|BOOL GlobalUnlock( HGLOBAL hMem)|FailureIfNullRet
+kernel32.dll|BOOL Heap32First( LPHEAPENTRY32 lphe, DWORD th32ProcessID, ULONG_PTR th32HeapID)|Out|FailureIfNullRet
+kernel32.dll|BOOL Heap32ListFirst( HANDLE hSnapshot, LPHEAPLIST32 lphl)|Out|FailureIfNullRet
+kernel32.dll|BOOL Heap32ListNext( HANDLE hSnapshot, LPHEAPLIST32 lphl)|Out|FailureIfNullRet
+kernel32.dll|BOOL Heap32Next( LPHEAPENTRY32 lphe)|Out|FailureIfNullRet
+;lots of call
+!kernel32.dll|LPVOID HeapAlloc( HANDLE hHeap, DWORD dwFlags, SIZE_T dwBytes)
+kernel32.dll|UINT HeapCompact( HANDLE hHeap, DWORD dwFlags )
+kernel32.dll|HANDLE HeapCreate( DWORD flOptions, SIZE_T dwInitialSize, SIZE_T dwMaximumSize)
+kernel32.dll|BOOL HeapDestroy( HANDLE hHeap)|FailureIfNullRet
+;lots of call
+!kernel32.dll|BOOL HeapFree( HANDLE hHeap, DWORD dwFlags, LPVOID lpMem)|Out|FailureIfNullRet
+kernel32.dll|BOOL HeapLock( HANDLE hHeap)|FailureIfNullRet
+kernel32.dll|BOOL HeapQueryInformation( HANDLE HeapHandle, HEAP_INFORMATION_CLASS HeapInformationClass, PVOID HeapInformation, SIZE_T HeapInformationLength, PSIZE_T ReturnLength)|Out|FailureIfNullRet
+kernel32.dll|LPVOID HeapReAlloc( HANDLE hHeap, DWORD dwFlags, LPVOID lpMem, SIZE_T dwBytes)|Out
+kernel32.dll|BOOL HeapSetInformation( HANDLE HeapHandle, HEAP_INFORMATION_CLASS HeapInformationClass, PVOID HeapInformation, SIZE_T HeapInformationLength)|Out|FailureIfNullRet
+kernel32.dll|SIZE_T HeapSize( HANDLE hHeap, DWORD dwFlags, LPCVOID lpMem)
+kernel32.dll|BOOL HeapUnlock( HANDLE hHeap)|FailureIfNullRet
+;lots of call
+!kernel32.dll|BOOL HeapValidate( HANDLE hHeap, DWORD dwFlags, LPCVOID lpMem)|FailureIfNullRet
+kernel32.dll|BOOL HeapWalk( HANDLE hHeap, LPPROCESS_HEAP_ENTRY lpEntry)|Out|FailureIfNullRet
+kernel32.dll|BOOL InitAtomTable( DWORD nSize)|FailureIfNullRet
+kernel32.dll|void InitializeCriticalSection( LPCRITICAL_SECTION lpCriticalSection)
+kernel32.dll|BOOL InitializeCriticalSectionAndSpinCount( LPCRITICAL_SECTION lpCriticalSection, DWORD dwSpinCount)|FailureIfNullRet
+kernel32.dll|void InitializeSListHead( PSLIST_HEADER ListHead)|Out
+;lots of call
+!kernel32.dll|LONG InterlockedCompareExchange( LONG volatile* Destination, LONG Exchange, LONG Comparand)|Out
+;lots of call
+!kernel32.dll|LONG InterlockedDecrement( LONG volatile* Addend)|Out
+kernel32.dll|LONG InterlockedExchange( LONG volatile* Target, LONG Value)|Out
+kernel32.dll|LONG InterlockedExchangeAdd( LONG volatile* Addend, LONG Value)|Out
+kernel32.dll|PSLIST_ENTRY InterlockedFlushSList( PSLIST_HEADER ListHead)|Out
+;lots of call
+!kernel32.dll|LONG InterlockedIncrement( LONG volatile* Addend)|Out
+kernel32.dll|PSLIST_ENTRY InterlockedPopEntrySList( PSLIST_HEADER ListHead)|Out
+kernel32.dll|PSLIST_ENTRY InterlockedPushEntrySList( PSLIST_HEADER ListHead, PSLIST_ENTRY ListEntry)|Out
+kernel32.dll|BOOL IsBadHugeReadPtr(const VOID* lp, UINT_PTR ucb)
+kernel32.dll|BOOL IsBadHugeWritePtr( LPVOID lp, UINT_PTR ucb)
+;lots of call
+!kernel32.dll|BOOL IsBadReadPtr( const VOID* lp, UINT_PTR ucb)
+;lots of call
+!kernel32.dll|BOOL IsBadStringPtrA( LPCSTR  lpsz, UINT_PTR ucchMax)
+;lots of call
+!kernel32.dll|BOOL IsBadStringPtrW( LPCWSTR lpsz, UINT_PTR ucchMax)
+;lots of call
+!kernel32.dll|BOOL IsBadWritePtr( LPVOID lp, UINT_PTR ucb)
+kernel32.dll|BOOL IsDBCSLeadByte( BYTE TestChar )
+kernel32.dll|BOOL IsDBCSLeadByteEx( UINT CodePage, BYTE TestChar )
+kernel32.dll|BOOL IsDebuggerPresent()
+kernel32.dll|BOOL IsProcessInJob( HANDLE ProcessHandle, HANDLE JobHandle, PBOOL Result)|Out
+kernel32.dll|BOOL IsProcessorFeaturePresent( DWORD ProcessorFeature)|Out
+kernel32.dll|BOOL IsSystemResumeAutomatic()
+kernel32.dll|BOOL IsValidCodePage( UINT CodePage )
+kernel32.dll|BOOL IsValidLanguageGroup( LGRPID LanguageGroup, DWORD dwFlags )
+kernel32.dll|BOOL IsValidLocale( LCID Locale, DWORD dwFlags )
+kernel32.dll|BOOL IsWow64Process( HANDLE hProcess, PBOOL Wow64Process)|Out
+kernel32.dll|int LCMapStringA( LCID Locale, DWORD dwMapFlags, LPCSTR  lpSrcStr, int cchSrc, LPSTR  lpDestStr, int cchDest )|Out
+kernel32.dll|int LCMapStringW( LCID Locale, DWORD dwMapFlags, LPCWSTR lpSrcStr, int cchSrc, LPWSTR lpDestStr, int cchDest )|Out
+kernel32.dll|void LZClose( INT hFile)
+kernel32.dll|LONG LZCopy( INT hfSource, INT hfDest)
+kernel32.dll|INT LZInit( INT hfSource)
+kernel32.dll|INT LZOpenFileA( LPSTR  lpFileName, LPOFSTRUCT lpReOpenBuf, WORD wStyle)|Out
+kernel32.dll|INT LZOpenFileW( LPWSTR lpFileName, LPOFSTRUCT lpReOpenBuf, WORD wStyle)|Out
+kernel32.dll|INT LZRead( INT hFile, LPSTR lpBuffer, INT cbRead)|Out
+kernel32.dll|LONG LZSeek( INT hFile, LONG lOffset, INT iOrigin)
+;lots of call
+!kernel32.dll|void LeaveCriticalSection( LPCRITICAL_SECTION lpCriticalSection)
+kernel32.dll|HMODULE LoadLibraryA( LPCSTR  lpFileName)|FailureIfNullRet
+kernel32.dll|HMODULE LoadLibraryExA( LPCSTR  lpFileName, HANDLE hFile, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|HMODULE LoadLibraryExW( LPCWSTR lpFileName, HANDLE hFile, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|HMODULE LoadLibraryW( LPCWSTR lpFileName)|FailureIfNullRet
+kernel32.dll|DWORD LoadModule( LPCSTR lpModuleName, LPVOID lpParameterBlock)|Out
+kernel32.dll|HGLOBAL LoadResource( HMODULE hModule, HRSRC hResInfo)|FailureIfNullRet
+;lots of call
+!kernel32.dll|HLOCAL LocalAlloc( UINT uFlags, SIZE_T uBytes)|FailureIfNullRet
+;kernel32.dll|LocalCompact()
+kernel32.dll|BOOL LocalFileTimeToFileTime( const FILETIME* lpLocalFileTime, LPFILETIME lpFileTime)|Out|FailureIfNullRet
+kernel32.dll|UINT LocalFlags( HLOCAL hMem)
+kernel32.dll|HLOCAL LocalFree( HLOCAL hMem)
+kernel32.dll|HLOCAL LocalHandle( LPCVOID pMem)
+kernel32.dll|LPVOID LocalLock( HLOCAL hMem)
+kernel32.dll|HLOCAL LocalReAlloc( HLOCAL hMem, SIZE_T uBytes, UINT uFlags)
+kernel32.dll|UINT LocalSize( HLOCAL hMem)
+kernel32.dll|BOOL LocalUnlock( HLOCAL hMem)|FailureIfNullRet
+kernel32.dll|BOOL LockFile( HANDLE hFile, DWORD dwFileOffsetLow, DWORD dwFileOffsetHigh, DWORD nNumberOfBytesToLockLow, DWORD nNumberOfBytesToLockHigh)|FailureIfNullRet
+kernel32.dll|BOOL LockFileEx( HANDLE hFile, DWORD dwFlags, DWORD dwReserved, DWORD nNumberOfBytesToLockLow, DWORD nNumberOfBytesToLockHigh, LPOVERLAPPED lpOverlapped)|Out
+kernel32.dll|LPVOID LockResource( HGLOBAL hResData)
+kernel32.dll|BOOL MapUserPhysicalPages( PVOID lpAddress, ULONG_PTR NumberOfPages, PULONG_PTR UserPfnArray)|Out|FailureIfNullRet
+kernel32.dll|BOOL MapUserPhysicalPagesScatter( PVOID* VirtualAddresses, ULONG_PTR NumberOfPages, PULONG_PTR PageArray)|Out|FailureIfNullRet
+kernel32.dll|LPVOID MapViewOfFile( HANDLE hFileMappingObject, DWORD dwDesiredAccess, DWORD dwFileOffsetHigh, DWORD dwFileOffsetLow, SIZE_T dwNumberOfBytesToMap)
+kernel32.dll|LPVOID MapViewOfFileEx( HANDLE hFileMappingObject, DWORD dwDesiredAccess, DWORD dwFileOffsetHigh, DWORD dwFileOffsetLow, SIZE_T dwNumberOfBytesToMap, LPVOID lpBaseAddress)|Out
+kernel32.dll|BOOL Module32First( HANDLE hSnapshot, LPMODULEENTRY32 lpme)|Out|FailureIfNullRet
+kernel32.dll|BOOL Module32FirstW( HANDLE hSnapshot, LPMODULEENTRY32W lpme)|Out|FailureIfNullRet
+kernel32.dll|BOOL Module32Next( HANDLE hSnapshot, LPMODULEENTRY32 lpme)|Out|FailureIfNullRet
+kernel32.dll|BOOL Module32NextW( HANDLE hSnapshot, LPMODULEENTRY32W lpme)|Out|FailureIfNullRet
+kernel32.dll|BOOL MoveFileA( LPCSTR  lpExistingFileName, LPCSTR  lpNewFileName)|FailureIfNullRet
+kernel32.dll|BOOL MoveFileExA( LPCSTR  lpExistingFileName, LPCSTR  lpNewFileName, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|BOOL MoveFileExW( LPCWSTR lpExistingFileName, LPCWSTR lpNewFileName, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|BOOL MoveFileW( LPCWSTR lpExistingFileName, LPCWSTR lpNewFileName)|FailureIfNullRet
+kernel32.dll|BOOL MoveFileWithProgressA( LPCSTR  lpExistingFileName, LPCSTR  lpNewFileName, LPPROGRESS_ROUTINE lpProgressRoutine, LPVOID lpData, DWORD dwFlags)|Out|FailureIfNullRet
+kernel32.dll|BOOL MoveFileWithProgressW( LPCWSTR lpExistingFileName, LPCWSTR lpNewFileName, LPPROGRESS_ROUTINE lpProgressRoutine, LPVOID lpData, DWORD dwFlags)|Out|FailureIfNullRet
+;lots of call
+!kernel32.dll|int MulDiv( int nNumber, int nNumerator, int nDenominator)
+kernel32.dll|int MultiByteToWideChar( UINT CodePage, DWORD dwFlags, LPCSTR lpMultiByteStr, int cbMultiByte, LPWSTR lpWideCharStr, int cchWideChar )|Out
+kernel32.dll|HANDLE OpenEventA( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenEventW( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HFILE OpenFile( LPCSTR lpFileName, LPOFSTRUCT lpReOpenBuff, UINT uStyle)|Out|FailureIfNullRet
+kernel32.dll|HANDLE OpenFileMappingA( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenFileMappingW( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenJobObjectA( DWORD dwDesiredAccess, BOOL bInheritHandles, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenJobObjectW( DWORD dwDesiredAccess, BOOL bInheritHandles, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenMutexA( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenMutexW( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenProcess( DWORD dwDesiredAccess, BOOL bInheritHandle, DWORD dwProcessId)|FailureIfNullRet
+kernel32.dll|HANDLE OpenSemaphoreA( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenSemaphoreW( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenThread( DWORD dwDesiredAccess, BOOL bInheritHandle, DWORD dwThreadId)|FailureIfNullRet
+kernel32.dll|HANDLE OpenWaitableTimerA( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCSTR  lpTimerName)|FailureIfNullRet
+kernel32.dll|HANDLE OpenWaitableTimerW( DWORD dwDesiredAccess, BOOL bInheritHandle, LPCWSTR lpTimerName)|FailureIfNullRet
+kernel32.dll|void OutputDebugStringA( LPCSTR  lpOutputString)
+kernel32.dll|void OutputDebugStringW( LPCWSTR lpOutputString)
+kernel32.dll|BOOL PeekConsoleInputA( HANDLE hConsoleInput, PINPUT_RECORD lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsRead)|Out|FailureIfNullRet
+kernel32.dll|BOOL PeekConsoleInputW( HANDLE hConsoleInput, PINPUT_RECORD lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsRead)|Out|FailureIfNullRet
+kernel32.dll|BOOL PeekNamedPipe( HANDLE hNamedPipe, LPVOID lpBuffer, DWORD nBufferSize, LPDWORD lpBytesRead, LPDWORD lpTotalBytesAvail, LPDWORD lpBytesLeftThisMessage)|Out|FailureIfNullRet
+kernel32.dll|BOOL PostQueuedCompletionStatus( HANDLE CompletionPort, DWORD dwNumberOfBytesTransferred, ULONG_PTR dwCompletionKey, LPOVERLAPPED lpOverlapped)|Out|FailureIfNullRet
+kernel32.dll|DWORD PrepareTape( HANDLE hDevice, DWORD dwOperation, BOOL bImmediate)
+kernel32.dll|BOOL Process32First( HANDLE hSnapshot, LPPROCESSENTRY32 lppe)|Out|FailureIfNullRet
+kernel32.dll|BOOL Process32FirstW( HANDLE hSnapshot, LPPROCESSENTRY32W lppe)|Out|FailureIfNullRet
+kernel32.dll|BOOL Process32Next( HANDLE hSnapshot, LPPROCESSENTRY32 lppe)|Out|FailureIfNullRet
+kernel32.dll|BOOL Process32NextW( HANDLE hSnapshot, LPPROCESSENTRY32W lppe)|Out|FailureIfNullRet
+kernel32.dll|BOOL ProcessIdToSessionId( DWORD dwProcessId, DWORD* pSessionId)|Out|FailureIfNullRet
+kernel32.dll|BOOL PulseEvent( HANDLE hEvent)|FailureIfNullRet
+kernel32.dll|BOOL PurgeComm( HANDLE hFile, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|USHORT QueryDepthSList( PSLIST_HEADER ListHead)|Out
+kernel32.dll|DWORD QueryDosDeviceA( LPCSTR  lpDeviceName, LPSTR  lpTargetPath, DWORD ucchMax)|Out
+kernel32.dll|DWORD QueryDosDeviceW( LPCWSTR lpDeviceName, LPWSTR lpTargetPath, DWORD ucchMax)|Out
+kernel32.dll|BOOL QueryInformationJobObject( HANDLE hJob, JOBOBJECTINFOCLASS JobObjectInfoClass, LPVOID lpJobObjectInfo, DWORD cbJobObjectInfoLength, LPDWORD lpReturnLength)|Out|FailureIfNullRet
+kernel32.dll|BOOL QueryMemoryResourceNotification( HANDLE ResourceNotificationHandle, PBOOL ResourceState)|Out|FailureIfNullRet
+;lots of call
+!kernel32.dll|BOOL QueryPerformanceCounter( LARGE_INTEGER *lpPerformanceCount)|Out|FailureIfNullRet
+kernel32.dll|BOOL QueryPerformanceFrequency( LARGE_INTEGER *lpFrequency)|Out|FailureIfNullRet
+kernel32.dll|DWORD QueueUserAPC( PAPCFUNC pfnAPC, HANDLE hThread, ULONG_PTR dwData)|Out
+kernel32.dll|BOOL QueueUserWorkItem( LPTHREAD_START_ROUTINE Function, PVOID Context, ULONG Flags)|Out
+; can cause deadlock at unload
+!kernel32.dll|void RaiseException( DWORD dwExceptionCode, DWORD dwExceptionFlags, DWORD nNumberOfArguments, const ULONG_PTR* lpArguments)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleA( HANDLE hConsoleInput, LPVOID lpBuffer, DWORD nNumberOfCharsToRead, LPDWORD lpNumberOfCharsRead, LPVOID pInputControl)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleInputA( HANDLE hConsoleInput, PINPUT_RECORD lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsRead)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleInputW( HANDLE hConsoleInput, PINPUT_RECORD lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsRead)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleOutputA( HANDLE hConsoleOutput, PCHAR_INFO lpBuffer, COORD dwBufferSize, COORD dwBufferCoord, PSMALL_RECT lpReadRegion)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleOutputAttribute( HANDLE hConsoleOutput, LPWORD lpAttribute, DWORD nLength, COORD dwReadCoord, LPDWORD lpNumberOfAttrsRead)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleOutputCharacterA( HANDLE hConsoleOutput, LPSTR  lpCharacter, DWORD nLength, COORD dwReadCoord, LPDWORD lpNumberOfCharsRead)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleOutputCharacterW( HANDLE hConsoleOutput, LPWSTR lpCharacter, DWORD nLength, COORD dwReadCoord, LPDWORD lpNumberOfCharsRead)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleOutputW( HANDLE hConsoleOutput, PCHAR_INFO lpBuffer, COORD dwBufferSize, COORD dwBufferCoord, PSMALL_RECT lpReadRegion)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadConsoleW( HANDLE hConsoleInput, LPVOID lpBuffer, DWORD nNumberOfCharsToRead, LPDWORD lpNumberOfCharsRead, LPVOID pInputControl)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReadDirectoryChangesW( HANDLE hDirectory, LPVOID lpBuffer:PointedDataSize=Arg6, DWORD nBufferLength, BOOL bWatchSubtree, DWORD dwNotifyFilter, LPDWORD lpBytesReturned, LPOVERLAPPED lpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine)|Out|FailureIfNullRet
+;lots of call
+!kernel32.dll|BOOL ReadFile( HANDLE hFile, LPVOID lpBuffer:PointedDataSize=Arg4, DWORD nNumberOfBytesToRead, LPDWORD lpNumberOfBytesRead, LPOVERLAPPED lpOverlapped)|Out|FailureIfNullRet|FailureIfLastErrorValue!=997
+kernel32.dll|BOOL ReadFileEx( HANDLE hFile, LPVOID lpBuffer:PointedDataSize=Arg3, DWORD nNumberOfBytesToRead, LPOVERLAPPED lpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine)|Out|FailureIfNullRet|FailureIfLastErrorValue!=997
+kernel32.dll|BOOL ReadFileScatter( HANDLE hFile, FILE_SEGMENT_ELEMENT* aSegmentArray, DWORD nNumberOfBytesToRead, LPDWORD lpReserved, LPOVERLAPPED lpOverlapped)|Out|FailureIfNullRet|FailureIfLastErrorValue!=997
+kernel32.dll|BOOL ReadProcessMemory( HANDLE hProcess, LPCVOID lpBaseAddress, LPVOID lpBuffer:PointedDataSize=Arg5, DWORD nSize, LPDWORD lpNumberOfBytesRead )|Out|FailureIfNullRet
+kernel32.dll|BOOL RegisterWaitForSingleObject( PHANDLE phNewWaitObject, HANDLE hObject, WAITORTIMERCALLBACK Callback, PVOID Context, ULONG dwMilliseconds, ULONG dwFlags)|FailureIfNullRet
+kernel32.dll|void ReleaseActCtx( HANDLE hActCtx)
+kernel32.dll|BOOL ReleaseMutex( HANDLE hMutex)|FailureIfNullRet
+kernel32.dll|BOOL ReleaseSemaphore( HANDLE hSemaphore, LONG lReleaseCount, LPLONG lpPreviousCount)|Out|FailureIfNullRet
+kernel32.dll|BOOL RemoveDirectoryA( LPCSTR  lpPathName)|FailureIfNullRet
+kernel32.dll|BOOL RemoveDirectoryW( LPCWSTR lpPathName)|FailureIfNullRet
+kernel32.dll|ULONG RemoveVectoredExceptionHandler( PVOID Handler)|Out
+kernel32.dll|BOOL ReplaceFile( LPCSTR  lpReplacedFileName, LPCSTR  lpReplacementFileName, LPCSTR  lpBackupFileName, DWORD dwReplaceFlags, LPVOID lpExclude, LPVOID lpReserved)|Out|FailureIfNullRet
+kernel32.dll|BOOL ReplaceFileA( LPCSTR  lpReplacedFileName, LPCSTR  lpReplacementFileName, LPCSTR  lpBackupFileName, DWORD dwReplaceFlags, LPVOID lpExclude, LPVOID lpReserved)|Out|FailureIfNullRet
+;ReplaceFileW same as ReplaceFile
+;kernel32.dll|BOOL ReplaceFileW( LPCSTR  lpReplacedFileName, LPCSTR  lpReplacementFileName, LPCSTR  lpBackupFileName, DWORD dwReplaceFlags, LPVOID lpExclude, LPVOID lpReserved)|Out|FailureIfNullRet
+kernel32.dll|BOOL RequestDeviceWakeup(HANDLE hDevice)|FailureIfNullRet
+;kernel32.dll|BOOL RequestWakeupLatency( LATENCY_TIME latency)|FailureIfNullRet
+;lots of call
+!kernel32.dll|BOOL ResetEvent( HANDLE hEvent)
+kernel32.dll|UINT ResetWriteWatch( LPVOID lpBaseAddress, SIZE_T dwRegionSize)|Out
+;lots of call
+!kernel32.dll|RestoreLastError(DWORD dwErrCode)
+kernel32.dll|DWORD ResumeThread( HANDLE hThread)
+kernel32.dll|VOID RtlCaptureContext( PCONTEXT ContextRecord)
+kernel32.dll|VOID RtlFillMemory(PVOID *Destination,SIZE_T Length, UCHAR Fill)|Out
+kernel32.dll|VOID RtlMoveMemory(PVOID *Destination,PCVOID Destination,SIZE_T Length)
+;kernel32.dll|void RtlUnwind( PVOID TargetFrame, PVOID TargetIp, PEXCEPTION_RECORD ExceptionRecord, PVOID ReturnValue)|Out
+!kernel32.dll|void ZeroMemory(PVOID Destination,SIZE_T Length)|Out
+kernel32.dll|BOOL ScrollConsoleScreenBufferA( HANDLE hConsoleOutput, const SMALL_RECT* lpScrollRectangle, const SMALL_RECT* lpClipRectangle, COORD dwDestinationOrigin, const CHAR_INFO* lpFill)|Out|FailureIfNullRet
+kernel32.dll|BOOL ScrollConsoleScreenBufferW( HANDLE hConsoleOutput, const SMALL_RECT* lpScrollRectangle, const SMALL_RECT* lpClipRectangle, COORD dwDestinationOrigin, const CHAR_INFO* lpFill)|Out|FailureIfNullRet
+kernel32.dll|DWORD SearchPathA( LPCSTR  lpPath, LPCSTR  lpFileName, LPCSTR  lpExtension, DWORD nBufferLength, LPSTR  lpBuffer, LPSTR* lpFilePart)|Out
+kernel32.dll|DWORD SearchPathW( LPCWSTR lpPath, LPCWSTR lpFileName, LPCWSTR lpExtension, DWORD nBufferLength, LPWSTR lpBuffer, LPWSTR* lpFilePart)|Out
+kernel32.dll|int SetCalendarInfoA( LCID Locale, CALID Calendar, CALTYPE CalType, LPCSTR  lpCalData )
+kernel32.dll|int SetCalendarInfoW( LCID Locale, CALID Calendar, CALTYPE CalType, LPCWSTR lpCalData )
+kernel32.dll|BOOL SetCommBreak( HANDLE hFile)|FailureIfNullRet
+kernel32.dll|BOOL SetCommConfig( HANDLE hCommDev, LPCOMMCONFIG lpCC, DWORD dwSize)|FailureIfNullRet
+kernel32.dll|BOOL SetCommMask( HANDLE hFile, DWORD dwEvtMask)|FailureIfNullRet
+kernel32.dll|BOOL SetCommState( HANDLE hFile, LPDCB lpDCB)|FailureIfNullRet
+kernel32.dll|BOOL SetCommTimeouts( HANDLE hFile, LPCOMMTIMEOUTS lpCommTimeouts)|FailureIfNullRet
+kernel32.dll|BOOL SetComputerNameA( LPCSTR  lpComputerName)|FailureIfNullRet
+kernel32.dll|BOOL SetComputerNameExA( COMPUTER_NAME_FORMAT NameType, LPCSTR  lpBuffer)|FailureIfNullRet
+kernel32.dll|BOOL SetComputerNameExW( COMPUTER_NAME_FORMAT NameType, LPCWSTR lpBuffer)|FailureIfNullRet
+kernel32.dll|BOOL SetComputerNameW( LPCWSTR lpComputerName)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleActiveScreenBuffer( HANDLE hConsoleOutput)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleCP( UINT wCodePageID)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleCtrlHandler( PHANDLER_ROUTINE HandlerRoutine, BOOL Add)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleCursorInfo( HANDLE hConsoleOutput, const CONSOLE_CURSOR_INFO* lpConsoleCursorInfo)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleCursorPosition( HANDLE hConsoleOutput, COORD dwCursorPosition)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleDisplayMode( HANDLE hConsoleOutput, DWORD dwFlags, PCOORD lpNewScreenBufferDimensions)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleMode( HANDLE hConsoleHandle, DWORD dwMode)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleOutputCP( UINT wCodePageID)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleScreenBufferSize( HANDLE hConsoleOutput, COORD dwSize)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleTextAttribute( HANDLE hConsoleOutput, WORD wAttributes)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleTitleA( LPCSTR  lpConsoleTitle)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleTitleW( LPCWSTR lpConsoleTitle)|FailureIfNullRet
+kernel32.dll|BOOL SetConsoleWindowInfo( HANDLE hConsoleOutput, BOOL bAbsolute, const SMALL_RECT* lpConsoleWindow)|FailureIfNullRet
+kernel32.dll|DWORD SetCriticalSectionSpinCount( LPCRITICAL_SECTION lpCriticalSection, DWORD dwSpinCount)
+kernel32.dll|BOOL SetCurrentDirectoryA( LPCSTR  lpPathName)|FailureIfNullRet
+kernel32.dll|BOOL SetCurrentDirectoryW( LPCWSTR lpPathName)|FailureIfNullRet
+kernel32.dll|BOOL SetDefaultCommConfigA( LPCSTR  lpszName, LPCOMMCONFIG lpCC, DWORD dwSize)|FailureIfNullRet
+kernel32.dll|BOOL SetDefaultCommConfigW( LPCWSTR lpszName, LPCOMMCONFIG lpCC, DWORD dwSize)|FailureIfNullRet
+!kernel32.dll|BOOL SetDllDirectoryA( LPCSTR  lpPathName)|FailureIfNullRet
+!kernel32.dll|BOOL SetDllDirectoryW( LPCWSTR lpPathName)|FailureIfNullRet
+kernel32.dll|BOOL SetEndOfFile( HANDLE hFile)|FailureIfNullRet
+kernel32.dll|BOOL SetEnvironmentVariableA( LPCSTR  lpName, LPCSTR  lpValue)|FailureIfNullRet
+kernel32.dll|BOOL SetEnvironmentVariableW( LPCWSTR lpName, LPCWSTR lpValue)|FailureIfNullRet
+kernel32.dll|UINT SetErrorMode( UINT uMode)
+;lots of call
+!kernel32.dll|BOOL SetEvent( HANDLE hEvent)|FailureIfNullRet
+kernel32.dll|void SetFileApisToANSI()
+kernel32.dll|void SetFileApisToOEM()
+kernel32.dll|BOOL SetFileAttributesA( LPCSTR  lpFileName, DWORD dwFileAttributes)|FailureIfNullRet
+kernel32.dll|BOOL SetFileAttributesW( LPCWSTR lpFileName, DWORD dwFileAttributes)|FailureIfNullRet
+kernel32.dll|DWORD SetFilePointer( HANDLE hFile, LONG lDistanceToMove, PLONG lpDistanceToMoveHigh, DWORD dwMoveMethod)|Out
+kernel32.dll|BOOL SetFilePointerEx( HANDLE hFile, LARGE_INTEGER liDistanceToMove, PLARGE_INTEGER lpNewFilePointer, DWORD dwMoveMethod)|FailureIfNullRet
+kernel32.dll|BOOL SetFileShortNameA( HANDLE hFile, LPCSTR  lpShortName)|FailureIfNullRet
+kernel32.dll|BOOL SetFileShortNameW( HANDLE hFile, LPCWSTR lpShortName)|FailureIfNullRet
+kernel32.dll|BOOL SetFileTime( HANDLE hFile, const FILETIME* lpCreationTime, const FILETIME* lpLastAccessTime, const FILETIME* lpLastWriteTime)|FailureIfNullRet
+kernel32.dll|BOOL SetFileValidData( HANDLE hFile, LONGLONG ValidDataLength)|FailureIfNullRet
+kernel32.dll|BOOL SetFirmwareEnvironmentVariableA( LPCSTR  lpName, LPCSTR  lpGuid, PVOID pBuffer, DWORD nSize)|FailureIfNullRet
+kernel32.dll|BOOL SetFirmwareEnvironmentVariableW( LPCWSTR lpName, LPCWSTR lpGuid, PVOID pBuffer, DWORD nSize)|FailureIfNullRet
+;SetHandleCount same as LockResource
+!kernel32.dll|UINT SetHandleCount( UINT uNumber )
+kernel32.dll|BOOL SetHandleInformation( HANDLE hObject, DWORD dwMask, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|BOOL SetInformationJobObject( HANDLE hJob, JOBOBJECTINFOCLASS JobObjectInfoClass, LPVOID lpJobObjectInfo, DWORD cbJobObjectInfoLength)|Out|FailureIfNullRet
+;lots of call
+!kernel32.dll|void SetLastError( DWORD dwErrCode)
+kernel32.dll|BOOL SetLocalTime( const SYSTEMTIME* lpSystemTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL SetLocaleInfoA( LCID Locale, LCTYPE LCType, LPCSTR  lpLCData )|FailureIfNullRet
+kernel32.dll|BOOL SetLocaleInfoW( LCID Locale, LCTYPE LCType, LPCWSTR lpLCData )|FailureIfNullRet
+kernel32.dll|BOOL SetMailslotInfo( HANDLE hMailslot, DWORD lReadTimeout)|FailureIfNullRet
+kernel32.dll|BOOL SetMessageWaitingIndicator(IN HANDLE hIndicator, IN ULONG cmsg)|FailureIfNullRet
+kernel32.dll|BOOL SetNamedPipeHandleState( HANDLE hNamedPipe, LPDWORD lpMode, LPDWORD lpMaxCollectionCount, LPDWORD lpCollectDataTimeout)|Out|FailureIfNullRet
+kernel32.dll|BOOL SetPriorityClass( HANDLE hProcess, DWORD dwPriorityClass)|FailureIfNullRet
+kernel32.dll|BOOL SetProcessAffinityMask( HANDLE hProcess, DWORD_PTR dwProcessAffinityMask)|FailureIfNullRet
+kernel32.dll|BOOL SetProcessPriorityBoost( HANDLE hProcess, BOOL DisablePriorityBoost)|FailureIfNullRet
+kernel32.dll|BOOL SetProcessShutdownParameters( DWORD dwLevel, DWORD dwFlags)|FailureIfNullRet
+kernel32.dll|BOOL SetProcessWorkingSetSize( HANDLE hProcess, SIZE_T dwMinimumWorkingSetSize, SIZE_T dwMaximumWorkingSetSize)|FailureIfNullRet
+kernel32.dll|BOOL SetStdHandle( DWORD nStdHandle, HANDLE hHandle)|FailureIfNullRet
+kernel32.dll|BOOL SetSystemPowerState( BOOL fSuspend, BOOL fForce)|FailureIfNullRet
+kernel32.dll|BOOL SetSystemTime( const SYSTEMTIME* lpSystemTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL SetSystemTimeAdjustment( DWORD dwTimeAdjustment, BOOL bTimeAdjustmentDisabled)|FailureIfNullRet
+kernel32.dll|DWORD SetTapeParameters( HANDLE hDevice, DWORD dwOperation, LPVOID lpTapeInformation)|Out
+kernel32.dll|DWORD SetTapePosition( HANDLE hDevice, DWORD dwPositionMethod, DWORD dwPartition, DWORD dwOffsetLow, DWORD dwOffsetHigh, BOOL bImmediate)
+kernel32.dll|DWORD_PTR SetThreadAffinityMask( HANDLE hThread, DWORD_PTR dwThreadAffinityMask)
+kernel32.dll|BOOL SetThreadContext( HANDLE hThread, const CONTEXT* lpContext)|Out
+kernel32.dll|EXECUTION_STATE SetThreadExecutionState( EXECUTION_STATE esFlags)
+kernel32.dll|DWORD SetThreadIdealProcessor( HANDLE hThread, DWORD dwIdealProcessor)
+kernel32.dll|BOOL SetThreadLocale( LCID Locale )|FailureIfNullRet
+;lots of call
+!kernel32.dll|BOOL SetThreadPriority( HANDLE hThread, int nPriority)|FailureIfNullRet
+kernel32.dll|BOOL SetThreadPriorityBoost( HANDLE hThread, BOOL DisablePriorityBoost)|FailureIfNullRet
+kernel32.dll|LANGID SetThreadUILanguage( LANGID LangId)
+kernel32.dll|BOOL SetTimeZoneInformation( const TIME_ZONE_INFORMATION* lpTimeZoneInformation)|Out|FailureIfNullRet
+kernel32.dll|SetTimerQueueTimer(prevWndProc, hwnd, WM_CHAR, wParam, lParam)
+kernel32.dll|LPTOP_LEVEL_EXCEPTION_FILTER SetUnhandledExceptionFilter( LPTOP_LEVEL_EXCEPTION_FILTER lpTopLevelExceptionFilter)|Out
+kernel32.dll|BOOL SetUserGeoID( GEOID GeoID )|FailureIfNullRet
+kernel32.dll|BOOL SetVolumeLabelA( LPCSTR  lpRootPathName, LPCSTR  lpVolumeName)|FailureIfNullRet
+kernel32.dll|BOOL SetVolumeLabelW( LPCWSTR lpRootPathName, LPCWSTR lpVolumeName)|FailureIfNullRet
+kernel32.dll|BOOL SetVolumeMountPointA( LPCSTR  lpszVolumeMountPoint, LPCSTR  lpszVolumeName)|FailureIfNullRet
+kernel32.dll|BOOL SetVolumeMountPointW( LPCWSTR lpszVolumeMountPoint, LPCWSTR lpszVolumeName)|FailureIfNullRet
+kernel32.dll|BOOL SetWaitableTimer( HANDLE hTimer, const LARGE_INTEGER* pDueTime, LONG lPeriod, PTIMERAPCROUTINE pfnCompletionRoutine, LPVOID lpArgToCompletionRoutine, BOOL fResume)|Out|FailureIfNullRet
+kernel32.dll|BOOL SetupComm( HANDLE hFile, DWORD dwInQueue, DWORD dwOutQueue)|FailureIfNullRet
+kernel32.dll|DWORD SignalObjectAndWait( HANDLE hObjectToSignal, HANDLE hObjectToWaitOn, DWORD dwMilliseconds, BOOL bAlertable)
+kernel32.dll|DWORD SizeofResource( HMODULE hModule, HRSRC hResInfo)
+kernel32.dll|void Sleep(DWORD dwMilliseconds)
+kernel32.dll|DWORD SleepEx( DWORD dwMilliseconds, BOOL bAlertable)
+kernel32.dll|DWORD SuspendThread( HANDLE hThread)
+;potential crash
+;kernel32.dll|VOID SwitchToFiber( LPVOID lpFiber)|Out
+kernel32.dll|BOOL SwitchToThread()
+kernel32.dll|BOOL SystemTimeToFileTime( const SYSTEMTIME* lpSystemTime, LPFILETIME lpFileTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL SystemTimeToTzSpecificLocalTime( LPTIME_ZONE_INFORMATION lpTimeZone, LPSYSTEMTIME lpUniversalTime, LPSYSTEMTIME lpLocalTime)|Out|FailureIfNullRet
+kernel32.dll|BOOL TerminateJobObject( HANDLE hJob, UINT uExitCode)|FailureIfNullRet
+kernel32.dll|BOOL TerminateProcess( HANDLE hProcess, UINT uExitCode)|FailureIfNullRet
+kernel32.dll|BOOL TerminateThread( HANDLE hThread, DWORD dwExitCode)|FailureIfNullRet
+kernel32.dll|BOOL TermsrvAppInstallMode()
+kernel32.dll|BOOL Thread32First( HANDLE hSnapshot, LPTHREADENTRY32 lpte)|Out|FailureIfNullRet
+kernel32.dll|BOOL Thread32Next( HANDLE hSnapshot, LPTHREADENTRY32 lpte)|Out|FailureIfNullRet
+kernel32.dll|DWORD TlsAlloc()
+kernel32.dll|BOOL TlsFree( DWORD dwTlsIndex)
+;lots of call
+!kernel32.dll|LPVOID TlsGetValue( DWORD dwTlsIndex)
+kernel32.dll|BOOL TlsSetValue( DWORD dwTlsIndex, LPVOID lpTlsValue)|Out
+kernel32.dll|BOOL Toolhelp32ReadProcessMemory( DWORD th32ProcessID, LPCVOID lpBaseAddress, LPVOID lpBuffer, SIZE_T cbRead, SIZE_T lpNumberOfBytesRead)|Out
+kernel32.dll|BOOL TransactNamedPipe( HANDLE hNamedPipe, LPVOID lpInBuffer, DWORD nInBufferSize, LPVOID lpOutBuffer, DWORD nOutBufferSize, LPDWORD lpBytesRead, LPOVERLAPPED lpOverlapped)|Out
+kernel32.dll|BOOL TransmitCommChar( HANDLE hFile, char cChar)
+;TryEnterCriticalSection hooking seems to crash sometimes
+!kernel32.dll|BOOL TryEnterCriticalSection( LPCRITICAL_SECTION lpCriticalSection)
+kernel32.dll|BOOL TzSpecificLocalTimeToSystemTime( LPTIME_ZONE_INFORMATION lpTimeZoneInformation, LPSYSTEMTIME lpLocalTime, LPSYSTEMTIME lpUniversalTime)|Out
+kernel32.dll|BOOL  UTRegister( HANDLE hModule,LPCSTR lpsz16BitDLL,LPCSTR lpszInitName, LPCSTR lpszProcName, UT32PROC* ppfn32Thunk,FARPROC pfnUT32Callback,LPVOID lpBuff)
+;UTUnRegister can't be hooked: It's size is less than 5 bytes
+;kernel32.dll|VOID UTUnRegister(HANDLE hModule)
+kernel32.dll|LONG UnhandledExceptionFilter( struct _EXCEPTION_POINTERS* ExceptionInfo)|Out
+kernel32.dll|BOOL UnlockFile( HANDLE hFile, DWORD dwFileOffsetLow, DWORD dwFileOffsetHigh, DWORD nNumberOfBytesToUnlockLow, DWORD nNumberOfBytesToUnlockHigh)
+kernel32.dll|BOOL UnlockFileEx( HANDLE hFile, DWORD dwReserved, DWORD nNumberOfBytesToUnlockLow, DWORD nNumberOfBytesToUnlockHigh, LPOVERLAPPED lpOverlapped)|Out
+kernel32.dll|BOOL UnmapViewOfFile( LPCVOID lpBaseAddress)
+kernel32.dll|BOOL UnregisterWait( HANDLE WaitHandle)
+kernel32.dll|BOOL UnregisterWaitEx( HANDLE WaitHandle, HANDLE CompletionEvent)
+kernel32.dll|BOOL UpdateResourceA( HANDLE hUpdate, LPCSTR  lpType, LPCSTR  lpName, WORD wLanguage, LPVOID lpData, DWORD cbData)|Out
+kernel32.dll|BOOL UpdateResourceW( HANDLE hUpdate, LPCWSTR lpType, LPCWSTR lpName, WORD wLanguage, LPVOID lpData, DWORD cbData)|Out
+kernel32.dll|DWORD VerLanguageNameA( DWORD wLang, LPSTR  szLang, DWORD nSize)|Out
+kernel32.dll|DWORD VerLanguageNameW( DWORD wLang, LPWSTR szLang, DWORD nSize)|Out
+kernel32.dll|ULONGLONG VerSetConditionMask( ULONGLONG dwlConditionMask, DWORD dwTypeBitMask, BYTE dwConditionMask)
+kernel32.dll|BOOL VerifyVersionInfoA( LPOSVERSIONINFOEXA lpVersionInfo, DWORD dwTypeMask, DWORDLONG dwlConditionMask)|Out
+kernel32.dll|BOOL VerifyVersionInfoW( LPOSVERSIONINFOEXW lpVersionInfo, DWORD dwTypeMask, DWORDLONG dwlConditionMask)|Out
+;lots of call
+!kernel32.dll|LPVOID VirtualAlloc( LPVOID lpAddress, SIZE_T dwSize, DWORD flAllocationType, DWORD flProtect)|Out
+kernel32.dll|LPVOID VirtualAllocEx( HANDLE hProcess, LPVOID lpAddress, SIZE_T dwSize, DWORD flAllocationType, DWORD flProtect)|Out
+kernel32.dll|BOOL VirtualFree( LPVOID lpAddress, SIZE_T dwSize, DWORD dwFreeType)|Out
+kernel32.dll|BOOL VirtualFreeEx( HANDLE hProcess, LPVOID lpAddress, SIZE_T dwSize, DWORD dwFreeType)|Out
+kernel32.dll|BOOL VirtualLock( LPVOID lpAddress, SIZE_T dwSize)|Out
+kernel32.dll|SIZE_T VirtualQuery( LPCVOID lpAddress, PMEMORY_BASIC_INFORMATION lpBuffer, SIZE_T dwLength)|Out
+kernel32.dll|SIZE_T VirtualQueryEx( HANDLE hProcess, LPCVOID lpAddress, PMEMORY_BASIC_INFORMATION lpBuffer, SIZE_T dwLength)|Out
+kernel32.dll|BOOL VirtualUnlock( LPVOID lpAddress, SIZE_T dwSize)|Out
+kernel32.dll|DWORD WTSGetActiveConsoleSessionId()
+kernel32.dll|BOOL WaitCommEvent( HANDLE hFile, LPDWORD lpEvtMask, LPOVERLAPPED lpOverlapped)|Out
+kernel32.dll|BOOL WaitForDebugEvent( LPDEBUG_EVENT lpDebugEvent, DWORD dwMilliseconds)|Out
+;lots of call
+!kernel32.dll|DWORD WaitForMultipleObjects( DWORD nCount, const HANDLE* lpHandles, BOOL bWaitAll, DWORD dwMilliseconds)|Out
+!kernel32.dll|DWORD WaitForMultipleObjectsEx( DWORD nCount, const HANDLE* lpHandles, BOOL bWaitAll, DWORD dwMilliseconds, BOOL bAlertable)|Out
+;lots of call
+!kernel32.dll|DWORD WaitForSingleObject( HANDLE hHandle, DWORD dwMilliseconds)
+!kernel32.dll|DWORD WaitForSingleObjectEx( HANDLE hHandle, DWORD dwMilliseconds, BOOL bAlertable)
+kernel32.dll|BOOL WaitNamedPipeA( LPCSTR  lpNamedPipeName, DWORD nTimeOut)
+kernel32.dll|BOOL WaitNamedPipeW( LPCWSTR lpNamedPipeName, DWORD nTimeOut)
+kernel32.dll|int WideCharToMultiByte( UINT CodePage, DWORD dwFlags, LPCWSTR lpWideCharStr, int cchWideChar, LPSTR lpMultiByteStr, int cbMultiByte, LPCSTR lpDefaultChar, LPBOOL lpUsedDefaultChar)|Out
+kernel32.dll|UINT WinExec( LPCSTR lpCmdLine, UINT uCmdShow)|FailureIfUnsignedRet<32
+kernel32.dll|BOOL WriteConsoleA( HANDLE hConsoleOutput, const VOID* lpBuffer, DWORD nNumberOfCharsToWrite, LPDWORD lpNumberOfCharsWritten, LPVOID lpReserved)|Out
+kernel32.dll|BOOL WriteConsoleInputA( HANDLE hConsoleInput, const INPUT_RECORD* lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsWritten)|Out
+kernel32.dll|BOOL WriteConsoleInputW( HANDLE hConsoleInput, const INPUT_RECORD* lpBuffer, DWORD nLength, LPDWORD lpNumberOfEventsWritten)|Out
+kernel32.dll|BOOL WriteConsoleOutputA( HANDLE hConsoleOutput, const CHAR_INFO* lpBuffer, COORD dwBufferSize, COORD dwBufferCoord, PSMALL_RECT lpWriteRegion)|Out
+kernel32.dll|BOOL WriteConsoleOutputAttribute( HANDLE hConsoleOutput, const WORD* lpAttribute, DWORD nLength, COORD dwWriteCoord, LPDWORD lpNumberOfAttrsWritten)|Out
+kernel32.dll|BOOL WriteConsoleOutputCharacterA( HANDLE hConsoleOutput, LPCSTR  lpCharacter, DWORD nLength, COORD dwWriteCoord, LPDWORD lpNumberOfCharsWritten)|Out
+kernel32.dll|BOOL WriteConsoleOutputCharacterW( HANDLE hConsoleOutput, LPCWSTR lpCharacter, DWORD nLength, COORD dwWriteCoord, LPDWORD lpNumberOfCharsWritten)|Out
+kernel32.dll|BOOL WriteConsoleOutputW( HANDLE hConsoleOutput, const CHAR_INFO* lpBuffer, COORD dwBufferSize, COORD dwBufferCoord, PSMALL_RECT lpWriteRegion)|Out
+kernel32.dll|BOOL WriteConsoleW( HANDLE hConsoleOutput, const VOID* lpBuffer, DWORD nNumberOfCharsToWrite, LPDWORD lpNumberOfCharsWritten, LPVOID lpReserved)|Out
+;lots of call
+!kernel32.dll|BOOL WriteFile( HANDLE hFile, LPCVOID lpBuffer:PointedDataSize=Arg3, DWORD nNumberOfBytesToWrite, LPDWORD lpNumberOfBytesWritten, LPOVERLAPPED lpOverlapped)|Out|FailureIfNullRet|FailureIfLastErrorValue!=997
+kernel32.dll|BOOL WriteFileEx( HANDLE hFile, LPCVOID lpBuffer:PointedDataSize=Arg3, DWORD nNumberOfBytesToWrite, LPOVERLAPPED lpOverlapped, LPOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine)|Out|FailureIfNullRet|FailureIfLastErrorValue!=997
+kernel32.dll|BOOL WriteFileGather( HANDLE hFile, FILE_SEGMENT_ELEMENT* aSegmentArray, DWORD nNumberOfBytesToWrite, LPDWORD lpReserved, LPOVERLAPPED lpOverlapped)|Out|FailureIfNullRet|FailureIfLastErrorValue!=997
+kernel32.dll|BOOL WritePrivateProfileSectionA( LPCSTR  lpAppName, LPCSTR  lpString, LPCSTR  lpFileName)|FailureIfNullRet
+kernel32.dll|BOOL WritePrivateProfileSectionW( LPCWSTR lpAppName, LPCWSTR lpString, LPCWSTR lpFileName)|FailureIfNullRet
+kernel32.dll|BOOL WritePrivateProfileStringA( LPCSTR  lpAppName, LPCSTR  lpKeyName, LPCSTR  lpString, LPCSTR  lpFileName)|FailureIfNullRet
+kernel32.dll|BOOL WritePrivateProfileStringW( LPCWSTR lpAppName, LPCWSTR lpKeyName, LPCWSTR lpString, LPCWSTR lpFileName)|FailureIfNullRet
+kernel32.dll|BOOL WritePrivateProfileStructA( LPCSTR  lpszSection, LPCSTR  lpszKey, LPVOID lpStruct, UINT uSizeStruct, LPCSTR  szFile)|FailureIfNullRet
+kernel32.dll|BOOL WritePrivateProfileStructW( LPCWSTR lpszSection, LPCWSTR lpszKey, LPVOID lpStruct, UINT uSizeStruct, LPCWSTR szFile)|FailureIfNullRet
+kernel32.dll|BOOL WriteProcessMemory( HANDLE hProcess, LPVOID lpBaseAddress, LPVOID lpBuffer:PointedDataSize=Arg4, DWORD nSize, LPDWORD lpNumberOfBytesWritten )|FailureIfNullRet
+kernel32.dll|BOOL WriteProfileSectionA( LPCSTR  lpAppName, LPCSTR  lpString)|FailureIfNullRet
+kernel32.dll|BOOL WriteProfileSectionW( LPCWSTR lpAppName, LPCWSTR lpString)|FailureIfNullRet
+kernel32.dll|BOOL WriteProfileStringA( LPCSTR  lpAppName, LPCSTR  lpKeyName, LPCSTR  lpString)|FailureIfNullRet
+kernel32.dll|BOOL WriteProfileStringW( LPCWSTR lpAppName, LPCWSTR lpKeyName, LPCWSTR lpString)|FailureIfNullRet
+kernel32.dll|DWORD WriteTapemark( HANDLE hDevice, DWORD dwTapemarkType, DWORD dwTapemarkCount, BOOL bImmediate)
+kernel32.dll|BOOL ZombifyActCtx( HANDLE hActCtx)|FailureIfNullRet
+kernel32.dll|LONG _hread( HFile hFile, LPCSTR lpBuffer, UINT cbRead)|out
+kernel32.dll|LONG _hwrite( HFile hFile, LPCSTR lpBuffer, UINT cbWrite)
+kernel32.dll|LONG _lclose( HFile hFile)
+kernel32.dll|LONG _lcreat( LPCSTR lpszFileName, int fnAttribute)
+kernel32.dll|LONG _llseek( HFile hFile, LONG lOffset, int nOrigin)
+kernel32.dll|LONG _lopen(const char *filename,int oflag,int pmode[optional]) 
+;_lread same as _hread
+!kernel32.dll|LONG _lread( HFile hFile, LPCSTR lpBuffer, UINT cbRead)
+;_lwrite same as _hwrite
+!kernel32.dll|LONG _lwrite( HFile hFile, LPCSTR lpBuffer, UINT cbWrite)
+kernel32.dll|LPSTR  lstrcat( LPSTR  lpString1, LPSTR  lpString2)|Out
+;lstrcatA same as lstrcat
+!kernel32.dll|LPSTR  lstrcatA( LPSTR  lpString1, LPSTR  lpString2)|Out
+kernel32.dll|LPSTR  lstrcatW( LPWSTR  lpString1, LPSTR  lpString2)|Out
+kernel32.dll|int lstrcmp( LPCSTR  lpString1, LPCSTR  lpString2)
+;lstrcmpA same as lstrcmp
+!kernel32.dll|int lstrcmpA( LPCSTR  lpString1, LPCSTR  lpString2)
+kernel32.dll|int lstrcmpW( LPCWSTR  lpString1, LPCSTR  lpString2)
+kernel32.dll|int lstrcmpi( LPCSTR  lpString1, LPCSTR  lpString2)
+;lstrcmpiA same as lstrcmpi
+!kernel32.dll|int lstrcmpiA( LPCSTR  lpString1, LPCSTR  lpString2)
+kernel32.dll|int lstrcmpiW( LPCWSTR  lpString1, LPCSTR  lpString2)
+kernel32.dll|LPSTR  lstrcpy( LPSTR  lpString1, LPSTR  lpString2)|Out
+;lstrcpyA same as lstrcpy
+!kernel32.dll|LPSTR  lstrcpyA( LPSTR  lpString1, LPSTR  lpString2)|Out
+kernel32.dll|LPSTR  lstrcpyW( LPWSTR  lpString1, LPSTR  lpString2)|Out
+kernel32.dll|LPSTR  lstrcpyn( LPSTR  lpString1, LPCSTR  lpString2, int iMaxLength)|Out
+;lstrcpynA same as lstrcpyn
+!kernel32.dll|LPSTR  lstrcpynA( LPSTR  lpString1, LPCSTR  lpString2, int iMaxLength)|Out
+kernel32.dll|LPSTR  lstrcpynW( LPWSTR  lpString1, LPCSTR  lpString2, int iMaxLength)|Out
+kernel32.dll|int lstrlen( LPCSTR  lpString)
+;lstrlenA same as lstrlen
+!kernel32.dll|int lstrlenA( LPCSTR  lpString)
+kernel32.dll|int lstrlenW( LPCWSTR  lpString)
+
+; put it in last to avoid hooking it all the time of kernel32 loading
+kernel32.dll|HANDLE CreateEventA( LPSECURITY_ATTRIBUTES lpEventAttributes, BOOL bManualReset, BOOL bInitialState, LPCSTR  lpName)|FailureIfNullRet
+kernel32.dll|HANDLE CreateEventW( LPSECURITY_ATTRIBUTES lpEventAttributes, BOOL bManualReset, BOOL bInitialState, LPCWSTR lpName)|FailureIfNullRet
+kernel32.dll|HMODULE GetModuleHandleA( LPCSTR  lpModuleName)|FailureIfNullRet
+kernel32.dll|BOOL GetModuleHandleExA( DWORD dwFlags, LPCSTR  lpModuleName, HMODULE* phModule)|Out|FailureIfNullRet
+kernel32.dll|BOOL GetModuleHandleExW( DWORD dwFlags, LPCWSTR lpModuleName, HMODULE* phModule)|Out|FailureIfNullRet
+kernel32.dll|HMODULE GetModuleHandleW( LPCWSTR lpModuleName)|FailureIfNullRet
+kernel32.dll|FARPROC GetProcAddress( HMODULE hModule, LPCSTR lpProcName)|FailureIfNullRet
+kernel32.dll|BOOL IsBadCodePtr( FARPROC lpfn)
+kernel32.dll|BOOL VirtualProtect( LPVOID lpAddress, SIZE_T dwSize, DWORD flNewProtect, PDWORD lpflOldProtect)|Out|FailureIfNullRet
+kernel32.dll|BOOL VirtualProtectEx( HANDLE hProcess, LPVOID lpAddress, SIZE_T dwSize, DWORD flNewProtect, PDWORD lpflOldProtect)|Out|FailureIfNullRet

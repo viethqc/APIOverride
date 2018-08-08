@@ -1,0 +1,24 @@
+﻿  StdFileOperations.cpp
+..\..\..\File\StdFileOperations.cpp(146): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: see declaration of 'wcsncpy'
+..\..\..\File\StdFileOperations.cpp(172): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+..\..\..\File\StdFileOperations.cpp(357): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+  DynamicMessageBox.cpp
+  MailSlotClient.cpp
+..\..\MailSlot\MailSlotClient.cpp(39): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(204): note: see declaration of 'wcsncpy'
+  IATLoaderMain.cpp
+IATLoaderMain.cpp(51): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+IATLoaderMain.cpp(52): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(101): note: see declaration of 'wcscat'
+IATLoaderMain.cpp(71): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(121): note: see declaration of 'wcscpy'
+IATLoaderMain.cpp(72): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\corecrt_wstring.h(101): note: see declaration of 'wcscat'
+  Generating Code...
+     Creating library Release\IATLoader.lib and object Release\IATLoader.exp
+  IATLoader.vcxproj -> C:\Users\VietHQ\Desktop\winapioverride32_src (1)\Tools\Process\APIOverride\IATLoader\Release\IATLoader.dll
+  IATLoader.vcxproj -> Release\IATLoader.pdb (Full PDB)
